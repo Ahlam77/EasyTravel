@@ -21,6 +21,10 @@
     letter-spacing: 0em;
     text-align: left;
     color: blue;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+
 
 }
 
@@ -360,7 +364,29 @@ h1 {
 }
 
 .footer {
-    padding: 100px;
+    padding: 100px 20px;
     background-image: linear-gradient(#2d557d, #9610fb);
     color: white;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-top: -70px;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 10px;
+
+
+}
+
+.footer h4 {
+    text-align: left;
+    margin-top: 20px;
+    padding-bottom: 25px;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
 }
