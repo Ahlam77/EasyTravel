@@ -1,0 +1,79 @@
+* html body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container img {
+    width: 100px;
+    height: 100px;
+    float: left;
+
+
+}
+
+.header h1 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+
+
+}
+
+
+
+
+.signup-btn {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 21px;
+    color: white;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 40px;
+    width: 98px;
+    left: 1313px;
+    top: 70px;
+    height: 36px;
+    width: 115px;
+    left: 1306px;
+    top: 62px;
+    border-radius: 6px;
+    background-color: blue;
+
+
+}
+
+h2 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:black;
+
+}
+
+ h3 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: blueviolet;
+
+}
