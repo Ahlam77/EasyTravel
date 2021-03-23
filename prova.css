@@ -18,10 +18,11 @@ body {
     box-shadow: none;
 }
 
-.radio-btn .btn::before {
+.radio-btn .btn::after {
     content: '';
     height: 15px;
     width: 15px;
+    top: -2px;
     left: -1px;
     background-color: white;
     position: relative;
