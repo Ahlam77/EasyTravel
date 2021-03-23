@@ -31,10 +31,10 @@
     </div>
   </section>
   <section>
-    <div class="main">
+    <div class="main" id="root">
       <h1  style="position: absolute; top: 70%; left: 20%; transform: translate(-50% ,-50%) ; color: white;">Discover what's out there.</h1>
       <img src="Image/background.jpg" alt="background" style="height: 50%; width: 100%;">
-         <form class="ser-bar" >
+         <form class="ser-bar" method="GET" action="./hotels.html">
             <input type="search" id="where" name="where" placeholder="where">
             <input type="date" id="checkin" name="checkin" >
             <input type="date" id="checkout" name="checkout">
@@ -52,7 +52,7 @@
             <input type="checkbox" id="travel-b1" name="travel-b">
             <label for="travel-b1"> Travel For business </label>
             </div>
-        </form>
+         </form>
       </div>
 
     <div class="continar">
@@ -241,6 +241,8 @@
     </div>
   </footer>
   </section>
+
+  <!--<script src="urlIndex.js"></script>-->
 </body>
 
 </html>

@@ -133,7 +133,7 @@ body{
     left: 500px; 
     color: white; 
 }
-.result-hotels{
+#result-hotels{
     position:absolute;
     top: 70%;
     left: 50%;
@@ -142,19 +142,15 @@ body{
     height: 60vh;
     border-radius: 6px;
     box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 1fr 1fr ;
-    grid-gap: 20px;
-    
-    
-    
-  
+    display: flex;
+    flex-direction: column;
 }
 .result-ho1{
     
     box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;
     text-align: center;
+    margin: 10px;
     
 }
 
