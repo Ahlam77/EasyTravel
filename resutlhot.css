@@ -1,6 +1,8 @@
 body{
     width: 100%;
-    height: 200vh;
+    height: 150vh;
+   margin: 0;
+    padding: 0;
 }
 .signup-btn{
     
@@ -56,6 +58,7 @@ float: left;
     border-radius: 10px; 
 }
 #where{
+
     margin: 10px;
 }
 #checkin{
