@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
 var client_secret = 'Ef1CzL2vsiygVqBb';
 
