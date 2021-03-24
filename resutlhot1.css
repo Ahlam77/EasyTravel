@@ -92,9 +92,9 @@ float: left;
     border-radius: 6px;
     box-sizing: border-box;
     display: grid;
-   background-color:white;
-   box-shadow: 3px 3px 3px 3px #555;
-   text-align: center;
+    background-color:white;
+    box-shadow: 3px 3px 3px 3px #555;
+    text-align: center;
 }
 #image1{
     width: 300px ; 
