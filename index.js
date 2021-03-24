@@ -73,6 +73,26 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 									+ '. ' + element.hotel.address.lines[0].toLowerCase()
 									+ ', ' + element.hotel.address.postalCode;
 				div.appendChild(pCityName);
+
+				var pElementMedia = document.createElement('span');
+				pElementMedia.innerHTML = 'Price: ' + element.offers[0].price.total + '$';
+				div.appendChild(pElementMedia);
+
+				var aElementDeals = document.createElement('a');
+				aElementDeals.setAttribute('href', `resutlhot.html?hotelId=${element.hotel.hotelId}&checkInDate=${checkinDate}&checkOutDate=${checkoutDate}&adults=${numberOfPeople}`);
+				aElementDeals.innerHTML = 'Deals';
+				aElementDeals.style.textDecoration = 'none';
+				aElementDeals.style.borderRadius = '5px';
+				aElementDeals.style.backgroundColor = 'blue';
+				aElementDeals.style.marginRight = '10px';
+				aElementDeals.style.marginLeft = '200px';
+				aElementDeals.style.color = 'white';
+				aElementDeals.style.fontSize = '1.2em';
+				aElementDeals.style.fontStyle = 'italic';
+				aElementDeals.style.fontWeight = 'normal';
+				aElementDeals.style.paddingLeft = '8px';
+				aElementDeals.style.paddingRight = '8px';
+				div.appendChild(aElementDeals);
 				
 				div.setAttribute('class', 'result-ho1');
 				divResultElement.appendChild(div);
