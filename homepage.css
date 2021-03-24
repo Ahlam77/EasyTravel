@@ -1,3 +1,7 @@
+[class*="col-"] {
+    width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -431,4 +435,9 @@ h1 {
     font-size: 12px;
     text-align: justify;
     padding-right: 35px;
+}
+
+.footer p .row .fa {
+    padding-right: 20px;
+    font-size: 15px;
 }
