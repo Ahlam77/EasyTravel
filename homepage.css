@@ -1,8 +1,14 @@
-* html body {
+* {
     margin: 0;
     padding: 0;
 }
 
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50%;
+}
 
 .container img {
     width: 100px;
@@ -28,7 +34,11 @@
 
 }
 
+.container-img {
+    background-size: cover;
+    background-position: center;
 
+}
 
 
 .signup-btn {
@@ -91,6 +101,130 @@
     width: 98px;
 }
 
+.booking-form-box {
+    max-width: 350px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+    float: right;
+    margin-right: 6%;
+    height: 70vh;
+}
+
+.radio-btn {
+    margin: 0 20px;
+}
+
+.radio-btn .btn {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+
+.radio-btn .btn::after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    top: -2px;
+    left: -1px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border: 3px solid white;
+    visibility: visible;
+    border-radius: 50%;
+
+}
+
+.radio-btn .btn:checked::after {
+    content: '';
+    background-color: blue;
+    transition: 0.5s;
+}
+
+.radio-btn span {
+    color: blue;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.booking-form {
+    padding: 0 20px 20px;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: blue;
+    font-weight: bold;
+}
+
+.input::placeholder {
+    color: black !important;
+}
+
+.input-grp {
+    width: 151px;
+    display: inline-block;
+}
+
+.from-control {
+    font-size: 12px;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: non;
+
+}
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button {
+    -webkit-appearance: non;
+    margin: 0;
+}
+
+.select-date::-webkit-calendar-picker-indicator {
+    background: blue !important;
+
+}
+
+.custom-select {
+    color: blue !important;
+    font-size: 12px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+
+}
+
+.custom-select option {
+    color: blue;
+}
+
+.search {
+    border-radius: 6px;
+    background-color: blue;
+    font-size: 13px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 21px;
+    color: white;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 40px;
+    width: 98px;
+    left: 1313px;
+    top: 70px;
+    height: 36px;
+    width: 115px;
+    left: 1306px;
+    top: 62px;
+    border-radius: 6px;
+    background-color: blue;
+
+
+}
+
 .banner {
     color: #fff;
     flex: 1;
@@ -99,12 +233,12 @@
 }
 
 .banner-title {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 200;
     opacity: 0.9;
     line-height: 1.3;
     padding-top: 80px;
-    padding-left: 20px;
+    padding-left: 80px;
     font-size: 40px;
     font-style: italic;
     font-weight: 700px;
@@ -122,98 +256,6 @@
     opacity: 0.9;
     padding: 0.7rem 0;
 }
-
-.ser-bar {
-    position: absolute;
-    top: 140%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 30vh;
-    background-color: rgb(6, 6, 151);
-    opacity: 0.5;
-    border-radius: 6px;
-
-
-}
-
-#where {
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 20px;
-}
-
-#checkin {
-
-    width: 130px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 1px;
-
-}
-
-#checkout {
-
-    width: 130px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 15px;
-
-}
-
-#guess {
-
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 15px;
-
-}
-
-#search {
-
-    border-radius: 6px;
-    background-color: green;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 40px;
-    width: 98px;
-}
-
-#tarvel-w {
-    position: absolute;
-    top: 100px;
-    left: 70px;
-    color: white;
-
-}
-
-#free-c {
-    position: absolute;
-    top: 100px;
-    left: 300px;
-    color: white;
-
-}
-
-#travel-b {
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    color: white;
-}
-
-
 
 .features {
     padding: 100px 0;
@@ -389,4 +431,9 @@ h1 {
     font-size: 12px;
     text-align: justify;
     padding-right: 35px;
+}
+
+.footer p .row .fa {
+    padding-right: 20px;
+    font-size: 15px;
 }
