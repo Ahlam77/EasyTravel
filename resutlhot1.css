@@ -1,27 +1,30 @@
-body{
+
+  body{
     width: 100%;
     height: 200vh;
 }
+
+
 .signup-btn{
-    
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 40px;
-    width: 98px;
-    left: 1313px;
-    top: 70px;
-    height: 36px;
-    width: 115px;
-    left: 1306px;
-    top: 62px;
-    border-radius: 6px;
-    background-color: blue;
+  
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 40px;
+  width: 98px;
+  left: 1313px;
+  top: 70px;
+  height: 36px;
+  width: 115px;
+  left: 1306px;
+  top: 62px;
+  border-radius: 6px;
+  background-color: blue;
 
 
 
@@ -35,100 +38,373 @@ float: left;
 }
 
 .header h1 {
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 700;
-    position:absolute;
-    top: 60px;
-    left: 200px;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: blue;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  position:absolute;
+  top: 50px;
+  left: 180px;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: blue;
 
 }
+.container-b h1 {
+  color: rgb(109, 109, 248); 
+  position: absolute; 
+  left: 25%; 
+  font-style: italic;
+}
+.form-example{
+  width: 250px ;
+  position:absolute;
+   left: 20px; 
+  top: 43% ;
+}
 #tabl{
-    width: 40%;  
-    margin-right:1px;   
-    padding: 12px ;  
-    height: 45vh; 
-    background-color:rgb(90, 90, 247); 
-    border-radius: 10px; 
+  width: 250px;  
+  margin-right:1px;   
+  padding: 12px ;  
+  height: 350px; 
+  background-color:rgb(90, 90, 247); 
+  border-radius: 10px; 
+}
+#tabl h3{
+  margin-left: 10%;
 }
 #where{
-    margin: 10px;
+  margin: 10px;
 }
 #checkin{
-    margin: 10px; 
-    width: 185px;
+  margin: 10px; 
+  width: 185px;
 }
 #checkout{
-    margin: 10px;
-    width: 185px;
+  margin: 10px;
+  width: 185px;
 }
 #passenger{
-    margin: 10px;
+  margin: 10px;
 }
 #sub-ser{
-    margin: 10px; 
-    background-color:blue; 
-    position:absolute;
-     left: 10%;
-     top: 80% ;
-     width: 89px;
-     border-radius: 5px; 
-     color:white;
-    font-weight: bold;
+  margin: 10px; 
+  background-color:blue; 
+  position:absolute;
+   left: 57px;
+   top: 260px ;
+   width: 89px;
+   border-radius: 5px; 
+   color:white;
+  font-weight: bold;
 }
 
 .info{
-    position:absolute;
-    top: 95%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 96vh;
-    border-radius: 6px;
-    box-sizing: border-box;
-    display: grid;
-    background-color:white;
-    box-shadow: 3px 3px 3px 3px #555;
-    text-align: center;
+  position:absolute;
+  top: 90%;
+  left: 900px;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 95vh;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: grid;
+  background-color:white;
+  box-shadow: 3px 3px 3px 3px #555;
+  text-align: center;
 }
 #image1{
-    width: 300px ; 
-    height: 67vh;
-   
+  width: 300px ; 
+  height: 67vh;
+ 
 }
 #image2{
-    width:  300px ;
-    height: 67vh; 
-    position:absolute;
-     right: 0px;
-    
-     
+  width:  300px ;
+  height: 67vh; 
+  position:absolute;
+   right: 0px;
+  
+   
 }
 #image3{
-    width:  300px ;
-    height: 67vh; 
-    position:absolute; 
-    margin-left: 355px;
+  width:  300px ;
+  height: 67vh; 
+  position:absolute; 
+  margin-left: 355px;
 }
 .book{
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 40px;
-    width: 98px;
-    position: absolute;
-    left: 85%;
-    top: 92%;
-    border-radius: 6px;
-    background-color: blue;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 40px;
+  width: 98px;
+  position: absolute;
+  left: 850px;
+  top: 80%;
+  border-radius: 6px;
+  background-color: blue;
+ 
 }
+.book a {
+  color: white; 
+  text-decoration:none;
+}
+.containaer-card{
+  display: flex;
+  direction: row;
+  position: absolute; 
+  left: 500px; 
+  top: 150%; 
+  width: 800px;
+  height: 80px;
+  
+  flex-wrap: wrap;
+}
+.card-header  {
+
+ color: blue; 
+ text-align: center;
+}
+
+
+  
+
+.border-primary{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+}
+.border-secondary{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+}
+.border-success{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+  }
+  @media (max-width: 700px) {
+     body{
+         width: 100%;
+         height: 100vh;
+     }
+     
+      .navbar{
+          width: 410px;
+      }
+      .signup-btn{
+  
+          font-family: Roboto;
+          font-size: 10px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 21px;
+          color: white;
+          letter-spacing: 0em;
+          text-align: center;
+          left: 1313px;
+          top: 70px;
+          height: 26px;
+          width: 50px;
+          left: 1306px;
+          top: 62px;
+          border-radius: 6px;
+          background-color: blue;
+      
+      
+      
+      }
+      .container img {
+          width: 50px;
+          height: 50px;
+          float: left;
+         
+         
+           }
+      .header h1 {
+          font-family: Roboto;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 700;
+          position:absolute;
+          top: 20px;
+          left: 50px;
+          line-height: 42px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: blue;
+      
+      }
+      .container-b h1 {
+          color: rgb(109, 109, 248); 
+          position: absolute; 
+          left: 25%;
+          font-size: 18px; 
+          font-style: italic;
+      }
+      .form-example{
+          width: 250px ;
+          position:absolute;
+           left: 20px; 
+          top: 20% ;
+      }
+      #tabl{
+          width: 200px;  
+          margin-right:1px;   
+          padding: 12px ;  
+          height: 300px; 
+          background-color:rgb(90, 90, 247); 
+          border-radius: 10px; 
+      }
+      #tabl h3{
+          margin-left: 10%;
+      }
+      #where{
+          margin: 10px;
+          width: 150px;
+      }
+      #checkin{
+          margin: 10px; 
+          width: 150px;
+      }
+      #checkout{
+          margin: 10px;
+          width: 150px;
+      }
+      #passenger{
+          margin: 10px;
+          width: 150px;
+      }
+      #sub-ser{
+          margin: 10px; 
+          background-color:blue; 
+          position:absolute;
+           left: 47px;
+           top: 240px ;
+           width: 89px;
+           border-radius: 5px; 
+           color:white;
+          font-weight: bold;
+      }
+      
+      
+      .info{
+          position:absolute;
+          top: 960px;
+          left: 200px;
+          transform: translate(-50%, -50%);
+          width: 400px;
+          height: 50vh;
+          border-radius: 6px;
+          box-sizing: border-box;
+          background-color:white;
+          box-shadow: 3px 3px 3px 3px #555;
+          font-size: 10px;
+          text-align: center;
+          
+      }
+      #image1{
+         
+          width: 120px ; 
+          height: 22vh;
+         
+      }
+      #image2{
+        
+          width:  120px ;
+          height: 22vh; 
+          position:absolute;
+           right: 141px;
+          
+           
+      }
+      #image3{
+        
+          width:  120px ;
+          height: 22vh; 
+          position:absolute; 
+          margin-left: 280px;
+      }
+      .book{
+          font-family: Roboto;
+          font-size: 12px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 21px;
+          color: white;
+          letter-spacing: 0em;
+          text-align: center;
+          height: 30px;
+          width: 70px;
+          position: absolute;
+          left: 310px;
+          top: 87%;
+          border-radius: 6px;
+          background-color: blue;
+         
+      }
+      .book a {
+          color: white; 
+          text-decoration:none;
+      }
+      .containaer-card{
+          display: flex;
+          direction: row;
+          position: absolute; 
+          left: 0px; 
+          top: 190%; 
+          width: 400px;
+          height: 60px;
+          font-size: 10px;
+          flex-wrap: wrap;
+      }
+      .card-header  {
+        background-color: blue;
+         color: blue; 
+         text-align: center;
+      }
+        
+        
+          
+      
+      .border-primary{
+           flex: 1;
+           margin: 10px;
+           box-sizing: border-box;
+           border-radius: 5px; 
+           box-shadow: 3px 3px 3px 3px #555;
+           background-color:white;
+      }
+      .border-secondary{
+           flex: 1;
+           margin: 10px;
+           box-sizing: border-box;
+           border-radius: 5px; 
+           box-shadow: 3px 3px 3px 3px #555;
+           background-color:white;
+      }
+      .border-success{
+           flex: 1;
+           margin: 10px;
+           box-sizing: border-box;
+           border-radius: 5px; 
+           box-shadow: 3px 3px 3px 3px #555;
+           background-color:white;
+          }
+  }
