@@ -1,7 +1,8 @@
 body{
-    width: 100%;
+    width: 100vw;
     height: 200vh;
 }
+
 .signup-btn{
     
     font-family: Roboto;
@@ -84,8 +85,8 @@ float: left;
 
 .info{
     position:absolute;
-    top: 95%;
-    left: 60%;
+    top: 700px;
+    left: 900px;
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 95vh;
