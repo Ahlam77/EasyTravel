@@ -65,7 +65,6 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 		.then(result => {
 			console.log(result);
 			result.data.forEach(element => {
-				console.log(hotelId);
 				hotelId = element.hotel.hotelId;
 				getRooms(hotelId, element);
 			});
@@ -84,21 +83,43 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
             .then(result => result.json())
             .then(result => {
 				if(result.hasOwnProperty("data")){
+					var divImage = document.createElement('div');
 					var div = document.createElement('div');
+					var divElementChild = document.createElement('div');
+					var divPElement = document.createElement('div');
+					var img = document.createElement('img');
+
+					divElementChild.style.display = 'flex';
+					divElementChild.style.justifyContent = 'space-between';
+					divImage.style.border = '1px solid black';
+					divImage.style.borderRadius = '5px';
+
+					if(element.hotel.hasOwnProperty("media")){
+						img.setAttribute('src', element.hotel.media[0].uri);
+						divImage.appendChild(img);
+						img.style.height = '150px';
+						divElementChild.appendChild(divImage);
+						console.log(element.hotel.media[0].uri);
+					}else{
+						divImage.style.height = '150px';
+						divImage.style.width = '150px';
+						divElementChild.appendChild(divImage);
+					}
+
 					var pNameHotel = document.createElement('p');
 					pNameHotel.innerHTML = element.hotel.name.toUpperCase();
-					div.appendChild(pNameHotel);
+					divPElement.appendChild(pNameHotel);
 
 					var pCityName = document.createElement('p');
 					pCityName.innerHTML = element.hotel.address.cityName + ', ' 
 									+ element.hotel.address.countryCode
 									+ '. ' + element.hotel.address.lines[0].toLowerCase()
 									+ ', ' + element.hotel.address.postalCode;
-					div.appendChild(pCityName);
+					divPElement.appendChild(pCityName);
 
 					var pElementMedia = document.createElement('span');
 					pElementMedia.innerHTML = 'Price: ' + element.offers[0].price.total + '$';
-					div.appendChild(pElementMedia);
+					divPElement.appendChild(pElementMedia);
 
 					var aElementDeals = document.createElement('a');
 					aElementDeals.setAttribute('href', `resutlhot.html?hotelId=${element.hotel.hotelId}`);
@@ -114,10 +135,15 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 					aElementDeals.style.fontWeight = 'normal';
 					aElementDeals.style.paddingLeft = '8px';
 					aElementDeals.style.paddingRight = '8px';
-					div.appendChild(aElementDeals);
-				
-					div.setAttribute('class', 'result-ho1');
-					divResultElement.appendChild(div);
+					aElementDeals.style.display = 'inline-block';
+					aElementDeals.style.marginTop = '50px';
+					var divAElement = document.createElement('div');
+					divAElement.appendChild(aElementDeals);
+					
+					divElementChild.appendChild(divPElement);
+					divElementChild.appendChild(divAElement);
+					divElementChild.setAttribute('class', 'result-ho1');
+					divResultElement.appendChild(divElementChild);
 				}
 			})
             .catch(error => console.log('error', error));
