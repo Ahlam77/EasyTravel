@@ -9,28 +9,12 @@ urlencoded.append("grant_type", "client_credentials");
 const urlParams = new URLSearchParams(window.location.search);
 
 var hotelId = '';
-var checkInDate = '';
-var checkOutDate = '';
-var adults = '';
-var accesToken = '';
 
 if(urlParams.has('hotelId')){
 	hotelId = urlParams.get('hotelId');
 }
 
-if(urlParams.has('checkInDate')){
-	checkInDate = urlParams.get('checkInDate');
-}
-
-if(urlParams.has('checkOutDate')){
-	checkOutDate = urlParams.get('checkOutDate');
-}
-
-if(urlParams.has('adults')){
-	adults = urlParams.get('adults');
-}
-
-if(hotelId === '' || checkInDate === '' || checkOutDate === '' || adults === ''){
+if(hotelId === ''){
     console.log('null');
 }else{
     var requestOptions = {
@@ -55,7 +39,7 @@ if(hotelId === '' || checkInDate === '' || checkOutDate === '' || adults === '')
 			},
 		};
 
-        fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}&checkInDate=${checkInDate}&checkOutDate=${checkOutDate}&adults=${adults}`, requestOptions)
+        fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => console.log(result))
             .catch(error => console.log('error', error));

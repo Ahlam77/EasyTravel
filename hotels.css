@@ -157,7 +157,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-#result-ho1{
+.result-ho1{
     
     box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;

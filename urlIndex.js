@@ -1,6 +1,6 @@
 function setParametreUrl(){
     var url = new URL("http://hotels.html");
-
+    console.log(document.getElementById('where').value);
     url.searchParams.append('city', document.getElementById('where').value);
 
     url.searchParams.append('checkIn', document.getElementById('checkin').value);
@@ -11,4 +11,4 @@ function setParametreUrl(){
     console.log(url)
 }
 
-document.getElementById('search').addEventListener('click', setParametreUrl);
+document.getElementsByClassName('search')[0].addEventListener('click', setParametreUrl);
