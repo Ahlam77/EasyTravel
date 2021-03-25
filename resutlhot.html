@@ -25,29 +25,29 @@
     </section>
     <h1 style="color: rgb(109, 109, 248); position: absolute; left: 25%; font-style: italic;">Review your deal</h1>
     <form action="" method="get" class="form-example" style="width: 40% ;position:absolute; left: 5%; top: 48% ;">
-        <fieldset style="width: 40%;  ; margin-right:1px;   padding: 12px ;  height: 45vh; background-color:rgb(90, 90, 247); border-radius: 10px; ">
+        <fieldset  id="tabl">
             <h3 style="margin-left: 10%;"> Search Hotels </h3>
-            <input type="text" name="name" id="name" placeholder="WHERE" style="margin: 10px;">
-           <input type="date" name="email" id="email" placeholder="CHECK-IN" style="margin: 10px; width: 185px;">
-           <input type="date" name="phone" id="phone" placeholder="CHECK-OUT" style="margin: 10px; width: 185px;">
-           <input type="number" name="phone" id="phone" placeholder="PASSENGER" style="margin: 10px;">
-            <input type="submit" value="search" style="margin: 10px; background-color:blue; position:absolute; left: 10%; top: 80% ; width: 89px; border-radius: 5px;  color:white;font-weight: bold;">
+            <input type="text" name="where" id="where" placeholder="WHERE" >
+           <input type="date" name="checkin" id="checkin" placeholder="CHECK-IN" >
+           <input type="date" name="checkout" id="checkout" placeholder="CHECK-OUT" >
+           <input type="number" name="passenger" id="passenger" placeholder="PASSENGER" >
+            <input type="submit" value="search" id="sub-ser">
 
         </fieldset>
     </form>
  <div class="info">
-     <img src="https://x.cdrst.com/foto/hotel-sf/b23/granderesp/hotel-westin-palace-madrid-exterior-542d1af.jpg" style="width: 31.5% ; height: 67vh;">
-     <img src="https://tse1.mm.bing.net/th?id=OIP.aU3nKlN0drg9dpLkaVIyOgHaFU&pid=Api&P=0&w=222&h=160" style="width:  31.5% ;height: 67vh; position:absolute; right: 0px;">
-     <img src="http://betterdailyhabits.com/wp-content/uploads/2015/06/hotel-generic.jpg" style="width:  31.5%  ;height: 67vh; position:absolute; right: 355px;">
+     <img src="https://x.cdrst.com/foto/hotel-sf/b23/granderesp/hotel-westin-palace-madrid-exterior-542d1af.jpg"  id="image1">
+     <img src="https://tse1.mm.bing.net/th?id=OIP.aU3nKlN0drg9dpLkaVIyOgHaFU&pid=Api&P=0&w=222&h=160"  id="image2">
+     <img src="http://betterdailyhabits.com/wp-content/uploads/2015/06/hotel-generic.jpg" id="image3" >
      <p><br>
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
          Quibusdam numquam aliquam quasi delectus, voluptatem expedita. <br>
          Officia temporibus, ratione velit, facere dolore consectetur placeat,<br>
           quia quasi beatae aut repellendus eum voluptas?
      </p>
-     <button type="button" class="book">book</button>
+     <button type="button" class="book" > <a href="pay.html" style="color: white; text-decoration:none;">book</a> </button>
  </div>
- <div class="card border-primary mb-3" style="max-width: 18rem; height: 30vh;  position: absolute; left: 30%; top: 150%;">
+ <div class="card border-primary mb-3" style="max-width: 18rem; height: 30vh;  position: absolute; left: 30%; top: 150%;" >
     <div class="card-header" style="background-color: blue; color: white; text-align: center;">Room type</div>
     <div class="card-body text-primary">
       <h5 class="card-title"> title</h5>

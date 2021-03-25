@@ -38,10 +38,10 @@ body{
     font-family: Roboto;
     font-size: 36px;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 700px;
     position:absolute;
     top: 50%;
-    left: 12%;
+    left: 150px;
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
@@ -52,14 +52,16 @@ body{
 
 .ser-bar{
     position:absolute;
-    top: 27%;
+    top: 30%;
     left: 50%;
+    margin-top: 75px;
     transform: translate(-50%, -50%);
-    width: 65%;
-    height: 20vh;
+    width: 1000px;
+    height: 150px;
     background-color: blue;
    /* opacity: 0.5;*/
     border-radius: 6px;
+
     
     
 
@@ -72,7 +74,9 @@ body{
     margin: 60px 20px;
 }
 #checkin{
-
+   position: absolute;
+   top: 1%;
+   left: 29%;
     width: 130px;
     height: 25px;
     border-radius: 5px;
@@ -81,7 +85,9 @@ body{
     
 }
 #checkout{
-
+    position: absolute;
+    top: 1%;
+    left: 43%;
     width: 130px;
     height: 25px;
     border-radius: 5px;
@@ -90,7 +96,9 @@ body{
     
 }
 #guess{
-
+    position: absolute;
+    top: 1%;
+    left: 60%;
     width: 200px;
     height: 25px;
     border-radius: 5px;
@@ -99,7 +107,9 @@ body{
     
 }
 #search {
-
+    position: absolute;
+    top: 38%;
+    left: 85%;
     border-radius: 6px;
     background-color: green;
     font-size: 18px;
@@ -133,19 +143,26 @@ body{
     left: 500px; 
     color: white; 
 }
+<<<<<<< HEAD
 #result-hotels{
     position:absolute;
     top: 70%;
+=======
+.result-hotels{
+    position: absolute;
+    top: 50%;
+>>>>>>> 5d9a80df571bd23b20593df55bd2d868fa43a5b8
     left: 50%;
+    margin-top: 150px;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 60vh;
+    width: 900px;
+    height: 150px;
     border-radius: 6px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
-.result-ho1{
+#result-ho1{
     
     box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;
@@ -166,7 +183,24 @@ float: left;
    
 
 }
-.result-ho2{
+.deal1{
+    position: absolute; 
+    top: 78%; 
+    left: 80%;
+    border-radius: 6px;
+    background-color: blue;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 21px;
+    color: white;
+    letter-spacing: 0em;
+    text-align: center;
+    height: 36px;
+    width: 115px;
+}
+#result-ho2{
     
     box-shadow: 3px 3px 2px 2px #555;
     border-radius: 6px;
@@ -178,12 +212,31 @@ float: left;
     height: 100%;
     float: left;
     }
-    .p2{
+    #p2{
         position: absolute;
         right: 1%;
         text-align: left;
+        
+        
        
     
     }
-
-
+    .deal2{
+        position: absolute; 
+        top: 98%; 
+        left: 80%;
+        border-radius: 6px;
+        background-color: blue;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 21px;
+        color: white;
+        letter-spacing: 0em;
+        text-align: center;
+        height: 36px;
+        width: 115px;
+    }
+   
+       
