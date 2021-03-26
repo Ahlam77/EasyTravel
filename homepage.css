@@ -1,7 +1,7 @@
 @media (max-width: 700px) {
 
     .navbar,
-    .bg-image .booking-form-box .button-continar {
+    .bg-image .booking-form-box .button-continar h1 .button-continar .header {
         flex-direction: column;
     }
 }
