@@ -162,7 +162,7 @@ float: left;
   left: 500px; 
   top: 150%; 
   width: 800px;
-  height: 80px;
+  height: 20vh;
   
   flex-wrap: wrap;
 }
