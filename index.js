@@ -11,23 +11,23 @@ var hotelId = '';
 
 var hotelIdArray = [];
 
-var divResultElement = document.getElementById('result-hotels');
+var divResultElement = document.getElementsByClassName('result-hotels')[0];
 
-/*const urlParams = new URLSearchParams(window.location.search); 
+const urlParams = new URLSearchParams(window.location.search); 
 
-var cityName = '';
-if(urlParams.has('where')){
-	cityName = urlParams.get('where');
+var city = '';
+if(urlParams.has('city')){
+	city = urlParams.get('city');
 }
 
 var checkinDate = '';
-if(urlParams.has('checkin')){
-	checkinDate = urlParams.get('checkin');
+if(urlParams.has('dateCheckIn')){
+	checkinDate = urlParams.get('dateCheckIn');
 }
 
 var checkoutDate = '';
-if(urlParams.has('checkout')){
-	checkoutDate = urlParams.get('checkout');
+if(urlParams.has('dateCheckout')){
+	checkoutDate = urlParams.get('dateCheckout');
 }
 
 var numberOfPeople = '';
@@ -35,9 +35,9 @@ if(urlParams.has('guess')){
 	numberOfPeople = urlParams.get('guess');
 }
 
-if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople === ''){
-	console.log(cityName + ' ' + checkinDate + ' ' + ' ' + checkoutDate + ' ' + numberOfPeople);
-}else{*/
+if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople === ''){
+	console.log(null);
+}else{
 	var requestOptions = {
 		method: 'POST',
 		body: urlencoded,
@@ -60,7 +60,7 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 				'Authorization':'Bearer ' + accesToken
 			},
 		}
-		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers?cityCode=LON&checkInDate=2021-03-25&checkOutDate=2021-03-26&adults=1`, requestHotel)
+		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers?cityCode=LON&checkInDate=${checkinDate}&checkOutDate=${checkoutDate}&adults=${numberOfPeople}`, requestHotel)
 		.then(result => result.json())
 		.then(result => {
 			console.log(result);
@@ -87,6 +87,7 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 					var div = document.createElement('div');
 					var divElementChild = document.createElement('div');
 					var divPElement = document.createElement('div');
+					divPElement.style.marginLeft = '10px';
 					var img = document.createElement('img');
 
 					divElementChild.style.display = 'flex';
@@ -98,6 +99,7 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 						img.setAttribute('src', element.hotel.media[0].uri);
 						divImage.appendChild(img);
 						img.style.height = '150px';
+						img.style.width = '150px';
 						divElementChild.appendChild(divImage);
 						console.log(element.hotel.media[0].uri);
 					}else{
@@ -142,13 +144,13 @@ if(cityName === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeop
 					
 					divElementChild.appendChild(divPElement);
 					divElementChild.appendChild(divAElement);
-					divElementChild.setAttribute('class', 'result-ho1');
+					divElementChild.setAttribute('class', 'result-ho1')
 					divResultElement.appendChild(divElementChild);
 				}
 			})
             .catch(error => console.log('error', error));
 	}
-//}
+}
 
 /*function searchHotels(){
 	var cityName = document.getElementById('where').value;
