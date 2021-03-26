@@ -1,5 +1,9 @@
-[class*="col-"] {
-    width: 100%;
+@media (max-width: 700px) {
+
+    .navbar,
+    .bg-image .booking-form-box .button-continar {
+        flex-direction: column;
+    }
 }
 
 * {

@@ -147,21 +147,25 @@ body{
     left: 500px; 
     color: white; 
 }
-
 .result-hotels{
     position: absolute;
     top: 50%;
     left: 50%;
     margin-top: 150px;
     transform: translate(-50%, -50%);
-    width: 600px;
+    width: 900px;
     height: 150px;
     border-radius: 6px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-gap: 20px;
+    
+    
+    
+  
 }
-.result-ho1{
+#result-ho1{
     
     box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;
@@ -270,7 +274,6 @@ float: left;
         
          .navbar{
              width: 410px;
-             flex-direction: column;
          }
          .signup-btn{
             font-size: 10px;
