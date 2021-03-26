@@ -262,7 +262,7 @@ float: left;
           width: 250px ;
           position:absolute;
            left: 20px; 
-          top: 20% ;
+          top: 40% ;
       }
       #tabl{
           width: 200px;  
@@ -306,7 +306,7 @@ float: left;
       
       .info{
           position:absolute;
-          top: 960px;
+          top: 980px;
           left: 200px;
           transform: translate(-50%, -50%);
           width: 400px;
