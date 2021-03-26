@@ -63,8 +63,7 @@ body{
     width: 1000px;
     height: 150px;
     background-color: blue;
-   
-    border-radius: 6px;
+   border-radius: 6px;
 
     
     
@@ -170,9 +169,9 @@ body{
     box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;
     text-align: center;
-    width: 100%;
+    width: 100%; 
     height: 35vh; 
-    text-align: left;
+    
     
 }
 
@@ -182,9 +181,8 @@ height: 100%;
 float: left;
 }
 #p1{
-    position: absolute;
-    right: 1%;
-    text-align: left;
+    
+  
  color :blue;
  position: absolute; 
  right: 1%;
@@ -211,17 +209,14 @@ float: left;
     height: 36px;
     width: 115px;
 }
-.deal1 a{
-    color: white; 
-    text-decoration:none;
-}
 #result-ho2{
     
-    box-shadow: 3px 3px 2px 2px #555;
+    box-shadow: 3px 3px 3px 3px #555;
     border-radius: 6px;
+    text-align: center;
     width: 100%; 
     height: 35vh; 
-    text-align: left;
+    
    
 }
 #image2{
@@ -230,15 +225,13 @@ float: left;
     float: left;
     }
     #p2{
-        position: absolute;
-        right: 1%;
-        text-align: left;
-        color :blue;
-        position: absolute; 
-        right: 0px; 
-        text-align: left; 
-        top: 10%;
-
+     
+    
+ color :blue;
+ position: absolute; 
+ right: 1%;
+  text-align: left; 
+  top: 10%;
         
        
     
@@ -261,11 +254,6 @@ float: left;
         width: 115px;
     }
 
-    .deal2 a{
-        color: white; 
-        text-decoration:none;
-    }
-
     @media (max-width: 700px) {
         body{
             width: 100%;
@@ -276,9 +264,11 @@ float: left;
              width: 410px;
          }
          .signup-btn{
-            font-size: 10px;
+     
+            
+             font-size: 10px;
               height: 26px;
-              width: 50px;
+             width: 50px;
             
          
          
@@ -362,10 +352,10 @@ float: left;
            
             width: 410px;
             height: 50px;
-            font-size: 10px;
-            position: absolute;
-            top: 300px;
-            left: 200px;
+           font-size: 10px;
+           position: absolute;
+           top: 300px;
+           left: 200px;
            }
         
         
