@@ -1,14 +1,11 @@
 function setParametreUrl(){
-    var url = new URL("http://hotels.html");
-    console.log(document.getElementById('where').value);
+    var url = new URL("http://localhost:8000/hotels.html");
+    
     url.searchParams.append('city', document.getElementById('where').value);
-
-    url.searchParams.append('checkIn', document.getElementById('checkin').value);
-
-    url.searchParams.append('checkOut', document.getElementById('checkout').value);
-
-    url.searchParams.append('numberOfPlace', document.getElementById('guess').value);
-    console.log(url)
+    url.searchParams.append('dateCheckIn', document.getElementById('checkIn').value);
+    url.searchParams.append('dateCheckout', document.getElementById('checkOut').value);
+    url.searchParams.append('guess', document.getElementById('guess').value);
+    location.replace(url);
 }
 
 document.getElementsByClassName('search')[0].addEventListener('click', setParametreUrl);

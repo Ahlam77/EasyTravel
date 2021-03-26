@@ -9,6 +9,7 @@ urlencoded.append("grant_type", "client_credentials");
 const urlParams = new URLSearchParams(window.location.search);
 
 var hotelId = '';
+var title = document.getElementsByTagName('h1')[0];
 
 if(urlParams.has('hotelId')){
 	hotelId = urlParams.get('hotelId');
@@ -41,7 +42,10 @@ if(hotelId === ''){
 
         fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
-            .then(result => console.log(result))
+            .then(result => {
+				title.innerHTML = result.data.hotel.name.toUpperCase();
+				console.log(title);
+			})
             .catch(error => console.log('error', error));
     }
 }
