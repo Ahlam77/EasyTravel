@@ -42,14 +42,14 @@ body{
     font-family: Roboto;
     font-size: 36px;
     font-style: italic;
-    font-weight: 700px;
-    position:absolute;
-    top: 45%;
-    left: 12%;
+    font-weight: 700;
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
     color: blue;
+    position: absolute;
+    top: 50%;
+    left: 12%;
 
 }
 
@@ -153,7 +153,7 @@ body{
     left: 50%;
     margin-top: 150px;
     transform: translate(-50%, -50%);
-    width: 900px;
+    width: 600px;
     height: 150px;
     border-radius: 6px;
     box-sizing: border-box;
@@ -274,6 +274,7 @@ float: left;
         
          .navbar{
              width: 410px;
+             flex-direction: column;
          }
          .signup-btn{
             font-size: 10px;
