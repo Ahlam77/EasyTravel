@@ -1,4 +1,56 @@
-body{
+.container{
+    display: grid;
+    grid-template-rows: 20vh 20vh 1fr 20vh;
+}
+
+.header{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+}
+
+.nav{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(90, 90, 247);
+    color: white;
+}
+
+.body{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.footer{
+    grid-column: 1;
+    grid-row: 4;
+    background-color:  rgb(90, 90, 247);
+}
+
+#title-icon{
+    color: blue;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 42px;
+    letter-spacing: 0em;
+    margin-left: 20px;
+    text-align: left;
+    position: absolute;
+}
+
+#icon{
+    height: 150px;
+    width: 150px;
+    
+}
+
+#icon img{
+    height: 150px;
+    width: 150px;
+}
+/*body{
     width: 100%;
     height: 150vh;
 
@@ -386,4 +438,4 @@ float: left;
             }
         }
        
-       
+       */
