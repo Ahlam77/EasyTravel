@@ -11,7 +11,7 @@ var hotelId = '';
 
 var hotelIdArray = [];
 
-var divResultElement = document.getElementsByClassName('result-hotels')[0];
+var divResultElement = document.getElementsByClassName('body')[0];
 
 const urlParams = new URLSearchParams(window.location.search); 
 
@@ -145,7 +145,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					divElementChild.appendChild(divPElement);
 					divElementChild.appendChild(divAElement);
 					divElementChild.setAttribute('class', 'result-ho1')
-					divResultElement.appendChild(divElementChild);
+					divResultElement.innerHTML = divElementChild;
 				}
 			})
             .catch(error => console.log('error', error));
