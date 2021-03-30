@@ -1,19 +1,23 @@
 .container{
     display: grid;
     grid-template-rows: 20vh 20vh 1fr 20vh;
+    grid-gap: 5px;
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
     grid-column: 1;
     grid-row: 1;
-    display: flex;
 }
 
 .nav{
+    border-radius: 8px;
     grid-column: 1;
     grid-row: 2;
     background-color: rgb(90, 90, 247);
     color: white;
+    text-align: center;
 }
 
 .body{
@@ -27,60 +31,60 @@
     background-color:  rgb(90, 90, 247);
 }
 
+.nav h3{
+    font-size: 1.7em;
+    margin-bottom: 3px;
+}
+
 #title-icon{
     color: blue;
     font-family: Roboto;
     font-size: 36px;
     font-style: italic;
     font-weight: bold;
-    line-height: 42px;
     letter-spacing: 0em;
-    margin-left: 20px;
+    margin-bottom: 10px;
     text-align: left;
-    position: absolute;
 }
 
 #icon{
-    height: 150px;
-    width: 150px;
-    
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 #icon img{
-    height: 150px;
+    height: 140px;
     width: 150px;
 }
+
+.signup-btn{
+    background-color: blue;
+    border-radius: 6px;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    height: 40px;
+    left: 1306px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 70px;
+    top: 62px;
+    width: 115px;
+}
+
+.nav input{
+    height: 36px;
+    width: 200px;
+}
+
 /*body{
     width: 100%;
     height: 150vh;
 
-}
-
-
-
-.signup-btn{
-    
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: italic;
-        font-weight: 700;
-        line-height: 21px;
-        color: white;
-        letter-spacing: 0em;
-        text-align: center;
-        height: 40px;
-        width: 98px;
-        left: 1313px;
-        top: 70px;
-        height: 36px;
-        width: 115px;
-        left: 1306px;
-        top: 62px;
-        border-radius: 6px;
-        background-color: blue;
-    
-    
-    
 }
 .container img {
     width: 100px;
