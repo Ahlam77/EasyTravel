@@ -60,12 +60,11 @@
     text-align: center;
     height: 40px;
     width: 98px;
-    left: 1313px;
-    top: 70px;
-    height: 36px;
-    width: 115px;
-    left: 1306px;
-    top: 62px;
+    left: 1100px;
+    top: 39px;
+    position: absolute;
+
+
     border-radius: 6px;
     background-color: blue;
 
@@ -74,7 +73,7 @@
 
 .button-continar {
     display: inline-block;
-    padding-left: 75px;
+    padding-right: 450px;
     justify-content: space-between;
 
 }
@@ -112,7 +111,7 @@
 .booking-form-box {
     max-width: 350px;
     border: 1px solid #ced4da;
-    margin: 10% auto 0;
+    margin: 5% auto 0;
     float: right;
     margin-right: 6%;
     height: 70vh;
@@ -153,6 +152,7 @@
     margin-right: 5px;
     font-size: 12px;
 }
+
 
 .booking-form {
     padding: 0 20px 20px;
@@ -238,6 +238,7 @@
     flex: 1;
     display: flex;
     align-items: center;
+    font-family: Roboto;
 }
 
 .banner-title {
@@ -250,6 +251,7 @@
     font-size: 40px;
     font-style: italic;
     font-weight: 700px;
+    font-family: Roboto;
 
 }
 
@@ -263,10 +265,12 @@
     font-weight: 200;
     opacity: 0.9;
     padding: 0.7rem 0;
+    font-family: Roboto;
 }
 
 .features {
     padding: 70px 0;
+
 
 
 
@@ -275,12 +279,13 @@
 h1 {
     text-align: center;
     padding-bottom: 30px;
+    font-family: Roboto;
 
 }
 
 .feature-img img {
     width: 100%;
-    height: 90%;
+    height: 60vh;
 
 
 
@@ -344,8 +349,9 @@ h1 {
 
 
 .gallery {
-    padding: 100px 0;
+
     background: white;
+
 }
 
 .gallery-box img {
@@ -370,6 +376,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Roboto;
 
 
 }
@@ -388,11 +395,13 @@ h1 {
     text-align: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
     padding-bottom: 50px;
+    font-family: Roboto;
 
 }
 
 .user-review p {
     padding: 50px 10px 10px 10px;
+    font-family: Roboto;
 }
 
 .users-feedback img {
@@ -424,9 +433,10 @@ h1 {
 .footer-logo {
     width: 150px;
     margin-top: -70px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     position: absolute;
     left: 10px;
+
 
 
 }
@@ -435,12 +445,15 @@ h1 {
     text-align: left;
     margin-top: 20px;
     padding-bottom: 25px;
+    font-family: Roboto;
 }
 
 .footer p {
     font-size: 12px;
     text-align: justify;
     padding-right: 35px;
+    font-family: Roboto;
+
 }
 
 .footer p .row .fa {
