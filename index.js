@@ -1,5 +1,5 @@
-var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
-var client_secret = 'Ef1CzL2vsiygVqBb';
+var client_id = 'AdkKevsPoEelITVIuryMyQVFywl4Gvtz';
+var client_secret = 'IqhvfTkXGGfEIJY1';
 
 var urlencoded = new URLSearchParams();
 urlencoded.append("client_id", client_id);
@@ -9,11 +9,12 @@ urlencoded.append("grant_type", "client_credentials");
 var accesToken ='';
 var hotelId = '';
 
-var hotelIdArray = [];
+var hotelArray = [{media: './Images/Easy_Travel.png'}, {}, {}];
 
 var divResultElement = document.getElementsByClassName('body')[0];
 
 const urlParams = new URLSearchParams(window.location.search); 
+
 
 var city = '';
 if(urlParams.has('city')){
@@ -67,8 +68,9 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 			result.data.forEach(element => {
 				hotelId = element.hotel.hotelId;
 				getRooms(hotelId, element);
-			});
+			})
 		})
+		.then(result => console.log(hotelArray))
 		.catch(error => console.log('error', error))
 
 	}
@@ -82,7 +84,8 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => {
-				if(result.hasOwnProperty("data")){
+				console.log(result);
+				/*if(result.hasOwnProperty("data")){
 					var divImage = document.createElement('div');
 					var div = document.createElement('div');
 					var divElementChild = document.createElement('div');
@@ -145,8 +148,8 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					divElementChild.appendChild(divPElement);
 					divElementChild.appendChild(divAElement);
 					divElementChild.setAttribute('class', 'result-ho1')
-					divResultElement.innerHTML = divElementChild;
-				}
+					divResultElement.appendChild(divElementChild);
+				}*/
 			})
             .catch(error => console.log('error', error));
 	}
@@ -240,4 +243,17 @@ result.data.forEach(element => {
 				
 				div.setAttribute('class', 'result-ho1');
 				divResultElement.appendChild(div);
+
+				var data1 = { lat: element.hotel.latitude, lon: element.hotel.longitude }
+			
+		
+			var map = L.map('map').setView(data1, 15);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+			}).addTo(map);
+
+			L.control.scale().addTo(map);
+			L.marker(data1).bindPopup('<img background-size="cover" width="100px" height="100px" src="images/hotel.jpg"><p>Hotel inn Paris<br> notre dame</p>').addTo(map);
+
 */
