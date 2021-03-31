@@ -82,8 +82,33 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => {
+				
 				if(result.hasOwnProperty("data")){
-					var divImage = document.createElement('div');
+		    var data1 = { lat: element.hotel.latitude, lon: element.hotel.longitude }
+			
+		
+			var map = L.map('map').setView(data1, 15);
+			L.tileLayer('https://b.tile.openstreetmap.org/${z}/${x}/${y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+			}).addTo(map);
+
+			L.control.scale().addTo(map);
+			L.marker(data1).bindPopup('<img background-size="cover" width="100px" height="100px" src="images/hotel.jpg"><p>Hotel inn Paris<br> notre dame</p>').addTo(map);
+			
+
+			var text1 = document.getElementById('text1')
+			text1.textContent = result.data[0].hotel.name;
+			var text2 = document.getElementById('text2')
+			text2.textContent = result.data[1].hotel.name;
+			var text3 = document.getElementById('text3')
+			text3.textContent = result.data[2].hotel.name;
+			var text4 = document.getElementById('text4')
+			text4.textContent = result.data[3].hotel.name;
+			var text5 = document.getElementById('text5')
+			text5.textContent = result.data[4].hotel.name;
+		
+					/*var divImage = document.createElement('div');
 					var div = document.createElement('div');
 					var divElementChild = document.createElement('div');
 					var divPElement = document.createElement('div');
@@ -145,7 +170,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					divElementChild.appendChild(divPElement);
 					divElementChild.appendChild(divAElement);
 					divElementChild.setAttribute('class', 'result-ho1')
-					divResultElement.appendChild(divElementChild);
+					divResultElement.appendChild(divElementChild);*/
 				}
 			})
             .catch(error => console.log('error', error));

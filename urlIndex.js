@@ -1,5 +1,5 @@
 function setParametreUrl(){
-    var url = new URL("http://localhost:8000/hotels1.html");
+    var url = new URL("http://localhost:8000/hotels.html");
     
     url.searchParams.append('city', document.getElementById('where').value);
     url.searchParams.append('dateCheckIn', document.getElementById('checkIn').value);
