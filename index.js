@@ -1,5 +1,5 @@
-var client_id = 'AdkKevsPoEelITVIuryMyQVFywl4Gvtz';
-var client_secret = 'IqhvfTkXGGfEIJY1';
+var client_id = 'SDSllrSFfbGfiUodFbtNE9hcFmkfYq56';
+var client_secret = 'Lt8G4viLXGAF5I76';
 
 var urlencoded = new URLSearchParams();
 urlencoded.append("client_id", client_id);
@@ -70,7 +70,6 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 				getRooms(hotelId, element);
 			})
 		})
-		.then(result => console.log(hotelArray))
 		.catch(error => console.log('error', error))
 
 	}
@@ -84,8 +83,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => {
-				console.log(result);
-				/*if(result.hasOwnProperty("data")){
+				if(result.hasOwnProperty("data")){
 					var divImage = document.createElement('div');
 					var div = document.createElement('div');
 					var divElementChild = document.createElement('div');
@@ -149,7 +147,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					divElementChild.appendChild(divAElement);
 					divElementChild.setAttribute('class', 'result-ho1')
 					divResultElement.appendChild(divElementChild);
-				}*/
+				}
 			})
             .catch(error => console.log('error', error));
 	}
