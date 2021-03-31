@@ -25,6 +25,7 @@
     background-color: white;
     border: 2px solid blue;
     border-radius: 5px;
+    display: flex;
     grid-column: 1;
     grid-row: 3;
     padding: 10px;
@@ -100,6 +101,20 @@
     font-weight: 700;
     height: 42px;
     width: 150px;
+}
+
+#map{
+    height: 420px;
+    width: 770px;
+    margin-right: 10px;
+}
+
+#hotels-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100vh;
 }
 
 /*body{
