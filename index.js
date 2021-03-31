@@ -1,5 +1,5 @@
-var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
-var client_secret = 'Ef1CzL2vsiygVqBb';
+var client_id = 'SDSllrSFfbGfiUodFbtNE9hcFmkfYq56';
+var client_secret = 'Lt8G4viLXGAF5I76';
 
 var urlencoded = new URLSearchParams();
 urlencoded.append("client_id", client_id);
@@ -9,11 +9,12 @@ urlencoded.append("grant_type", "client_credentials");
 var accesToken ='';
 var hotelId = '';
 
-var hotelIdArray = [];
+var hotelArray = [{media: './Images/Easy_Travel.png'}, {}, {}];
 
-var divResultElement = document.getElementsByClassName('result-hotels')[0];
+var divResultElement = document.getElementsByClassName('body')[0];
 
 const urlParams = new URLSearchParams(window.location.search); 
+
 
 var city = '';
 if(urlParams.has('city')){
@@ -67,7 +68,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 			result.data.forEach(element => {
 				hotelId = element.hotel.hotelId;
 				getRooms(hotelId, element);
-			});
+			})
 		})
 		.catch(error => console.log('error', error))
 
@@ -265,4 +266,17 @@ result.data.forEach(element => {
 				
 				div.setAttribute('class', 'result-ho1');
 				divResultElement.appendChild(div);
+
+				var data1 = { lat: element.hotel.latitude, lon: element.hotel.longitude }
+			
+		
+			var map = L.map('map').setView(data1, 15);
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+			}).addTo(map);
+
+			L.control.scale().addTo(map);
+			L.marker(data1).bindPopup('<img background-size="cover" width="100px" height="100px" src="images/hotel.jpg"><p>Hotel inn Paris<br> notre dame</p>').addTo(map);
+
 */
