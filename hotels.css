@@ -1,6 +1,7 @@
 .container{
+    background-color: rgb(245, 245, 245);
     display: grid;
-    grid-template-rows: 20vh 20vh 1fr 20vh;
+    grid-template-rows: 15vh 20vh 1fr 20vh;
     grid-gap: 5px;
 }
 
@@ -21,8 +22,12 @@
 }
 
 .body{
+    background-color: white;
+    border: 2px solid blue;
+    border-radius: 5px;
     grid-column: 1;
     grid-row: 3;
+    padding: 10px;
 }
 
 .footer{
@@ -54,8 +59,8 @@
 }
 
 #icon img{
-    height: 140px;
-    width: 150px;
+    height: 108px;
+    width: 118px;
 }
 
 .signup-btn{
@@ -67,9 +72,10 @@
     font-style: italic;
     font-weight: 700;
     height: 40px;
-    left: 1306px;
     line-height: 21px;
     letter-spacing: 0em;
+    margin-right: 10px;
+    margin-top: 45px;
     text-align: center;
     top: 70px;
     top: 62px;
@@ -77,8 +83,23 @@
 }
 
 .nav input{
+    border-color: rgb(245, 245, 245);
+    border-radius: 3px;
     height: 36px;
     width: 200px;
+}
+
+#search{
+    background-color: blue;
+    border-color: black;
+    border-radius: 6px;
+    color: white;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    height: 42px;
+    width: 150px;
 }
 
 /*body{
