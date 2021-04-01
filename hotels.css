@@ -107,8 +107,11 @@
     height: 420px;
     width: 770px;
     margin-right: 10px;
+    
 }
-
+#map > div{
+    position: fixed;
+}
 #hotels-info{
     display: flex;
     flex-wrap: wrap;
