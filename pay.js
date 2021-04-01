@@ -44,7 +44,10 @@ if(idRooms === ''){
 
               fetch("https://test.api.amadeus.com/v2/shopping/hotel-offers/" + idRooms, requestOptions)
                 .then(response => response.json())
-                .then(result => console.log(result))
+                .then(result => {
+                    console.log(result);
+                    
+                })
                 .catch(error => console.log('error', error));
     }
 }
