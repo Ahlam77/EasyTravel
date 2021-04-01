@@ -403,8 +403,9 @@ float: left;
        .container{
         background-color: rgb(245, 245, 245);
         display: grid;
-        grid-template-rows: 15vh 20vh 1fr 20vh;
+        grid-template-rows: 15vh 20vh 1fr 30vh;
         grid-gap: 5px;
+        
     }
     
     .header{
@@ -431,14 +432,8 @@ float: left;
         grid-column: 1;
         grid-row: 3;
         padding: 10px;
+       
     }
-    
-    .footer{
-        grid-column: 1;
-        grid-row: 4;
-        background-color:  rgb(90, 90, 247);
-    }
-    
     .nav h3{
         font-size: 1.7em;
         margin-bottom: 3px;
@@ -518,4 +513,9 @@ float: left;
         margin-bottom: 10px;
         width: 100vh;
     }
-   
+    .footer{
+        grid-column: 1;
+        grid-row: 4;
+        background-color:  rgb(90, 90, 247);
+        
+    }
