@@ -92,7 +92,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 		};
 
 		function addUrlHotel(){
-			var url = new URL("http://localhost:8000/resutlHot.html");
+			var url = new URL("http://localhost:8000/resutlhot.html");
 			url.searchParams.append('hotelId', hotelId);
 			location.replace(url);
 		}
