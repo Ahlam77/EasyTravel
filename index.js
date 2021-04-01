@@ -90,6 +90,12 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 				'Authorization':'Bearer ' + accesToken
 			},
 		};
+
+		function addUrlHotel(){
+			var url = new URL("http://localhost:8000/resutlHot.html");
+			url.searchParams.append('hotelId', hotelId);
+			location.replace(url);
+		}
 		fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => {
@@ -152,6 +158,7 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					button.innerHTML = 'Deals';
 					button.style.display = 'block';
 					button.style.right = '10px';
+					button.addEventListener('click', addUrlHotel);
 					divComponent.appendChild(button);
 
 					div.appendChild(divComponent);
