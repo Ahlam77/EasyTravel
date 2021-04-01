@@ -1,5 +1,5 @@
-var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
-var client_secret = 'Ef1CzL2vsiygVqBb';
+var client_id = 'SDSllrSFfbGfiUodFbtNE9hcFmkfYq56';
+var client_secret = 'Lt8G4viLXGAF5I76';
 
 var urlencoded = new URLSearchParams();
 urlencoded.append("client_id", client_id);

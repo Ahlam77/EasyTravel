@@ -4,7 +4,11 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+<<<<<<< HEAD
     "express": "^4.17.1",
     "lowdb": "^1.0.0"
+=======
+    "express": "^4.17.1"
+>>>>>>> 97eca8104a2dcd27d9b02ec15841f457ae81e8c2
   }
 }
