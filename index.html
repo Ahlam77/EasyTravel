@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Easy Travel</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-3 shadow">
+      <div class="container">
+        <img src="Image/Easy_Travel2.png" alt="logo">
+        <h1>Easy Travel</h1>
+        <button type="button" class="signup-btn">Sign In</button>
+        <section>
+          <div class="button-continar">
+            <a href="appartment.html" target="blank"><button type="button" class="Apa-btn"> Apartment</button></a>
+            <a href="hotels1.html" target="blank"><button type="button" class="hot-btn"> Hotels</button></a>
+          </div>
+        </section>
+      </div>
+
+    </nav>
+  </section>
+  <!-- Page Content -->
+
+  <section>
+    <div class="bg-image" style="background-image: url('Image/travel.jpg')">
+      <h2 style="position: absolute; top: 57%; left: 30%; transform: translate(-50% ,-50%) ; color:blue ; font-family: Roboto; font-weight: bold;" >Discover
+        what's out there. <br> <br> Not sure where to start your getaway? <br> <br>
+        Check out our top destinations</h2>
+        
+      <div class="booking-form-box">
+        <div class="radio-btn">
+          <input type="radio" class="btn" name="check" checked="checked"><span>Travel with my family</span>
+          <input type="radio" class="btn" name="check"><span>Free Cancelletion</span>
+        </div>
+        <div class="booking-form">
+          <label>where</label>
+          <input type="text" class="from-control" style="width: 95%; " id="where">
+
+          <div class="input-grp">
+            <label>Departing</label>
+            <input type="date" class="from-control select-date" id="checkIn">
+          </div>
+          <div class="input-grp">
+            <label>Returing</label>
+            <input type="date" class="from-control select-date" id="checkOut">
+          </div>
+          <div class="input-grp">
+            <label>Adults</label>
+            <input type="number" class="from-control " value="1" id="guess">
+          </div>
+          <div class="input-grp">
+            <label>Childrin</label>
+            <input type="number" class="from-control " value="0" >
+          </div>
+          <div class="input-grp">
+            <label>Rooms</label>
+            <select class="custom-select">
+              <option>single</option>
+              <option>Double</option>
+              <option>Triple</option>
+
+          </select>
+        </div>
+          <button type="submit" class="search">search</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="features">
+    <h1>Featured Destination</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="Image/place-2.jpg" alt="">
+              <div class="praice">
+                <p>75£</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-detalis">
+              <h4>Rome, Italy</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
+                </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i> Rome</span>
+                <span><i class="fa fa-sun-o"></i> 4 days </span>
+                <span><i class="fa fa-moon-o"></i> 3 nights</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="Image/place-6.jpg" alt="">
+              <div class="praice">
+                <p>150£</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-detalis">
+              <h4>Australia</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
+                </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i> Australia</span>
+                <span><i class="fa fa-sun-o"></i> 4 days </span>
+                <span><i class="fa fa-moon-o"></i> 3 nights</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box">
+            <div class="feature-img">
+              <img src="Image/place-4.jpg" alt="">
+              <div class="praice">
+                <p>100£</p>
+              </div>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+            </div>
+            <div class="feature-detalis">
+              <h4>London, UK</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
+                </p>
+              <div>
+                <span><i class="fa fa-map-marker"></i> London</span>
+                <span><i class="fa fa-sun-o"></i> 4 days </span>
+                <span><i class="fa fa-moon-o"></i> 3 nights</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="gallery">
+    <h1>Travelling Gallery</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="gallery-box">
+            <img src="Image/place-2.jpg" alt="">
+            <h4>USA</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-box">
+            <img src="Image/place-3.jpg" alt="">
+            <h4>Australia</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-box">
+            <img src="Image/place-5.jpg" alt="">
+            <h4>USA</h4>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="gallery-box">
+            <img src="Image/place-3.jpg" alt="">
+            <h4>USA</h4>
+          </div>
+        </div>
+
+  </section>
+  <section class="users-feedback">
+    <h1>Trip Advaiser</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="user-review">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
+              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
+              recusandae. Consectetur at ea amet doloremque aliquid.</p>
+            <h5>Marco </h5>
+            <small>Australia</small>
+          </div>
+          <img src="Image/person-1.jpg" alt="Marco">
+        </div>
+        <div class="col-md-4">
+          <div class="user-review">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
+              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
+              recusandae. Consectetur at ea amet doloremque aliquid.</p>
+            <h5>Marco </h5>
+            <small>USA</small>
+          </div>
+          <img src="Image/person-2.jpg" alt="Marco">
+        </div>
+        <div class="col-md-4">
+          <div class="user-review">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
+              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
+              recusandae. Consectetur at ea amet doloremque aliquid.</p>
+            <h5>Marco </h5>
+            <small>Italy</small>
+          </div>
+          <img src="Image/person-3.jpg" alt="Marco">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="Image/Easy_Travel2.png" alt="" class="footer-logo">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat hic esse excepturi obcaecati in animi
+              at facilis consectetur aperiam itaque nihil velit alias quisquam dignissimos maxime nesciunt vero,
+              mollitia ipsum.</p>
+          </div>
+          <div class="col-md-3">
+            <h4>features</h4>
+            <p>Deals & Offers</p>
+            <p>Customer Reviews</p>
+            <p>Cancelation Policy</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Quick Contact</h4>
+            <p><i class="fa fa-phone-square"></i> +0 00000000</p>
+            <p><i class="fa fa-envelope-square"></i> Easytravel@axample.com</p>
+            <p><i class="fa fa-home"></i> xyz Rode, ABC City</p>
+            
+          </div>
+          <div class="col-md-3">
+          <h4>Follow Us</h4>
+            <p><i class="fa fa-facebook-official"></i> Facebook</p>
+            <p><i class="fa fa-youtube-play"></i> Youtube</p>
+            <p><i class="fa fa-twitter"></i> Twitter</p>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script src="urlIndex.js"></script>
+</body>
+</html>

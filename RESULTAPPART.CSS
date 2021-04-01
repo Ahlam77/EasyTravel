@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+
+.navbar{
+ 
+  display: flex;
+  position: static;
+ 
+    
+}
+
+.signup-btn{
+  
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 36px;
+  width: 115px;
+  left: 1306px;
+  top: 62px;
+  border-radius: 6px;
+  background-color: blue;
+
+
+
+}
+.container img {
+width: 100px;
+height: 100px;
+float: left;
+
+
+}
+
+.header h1 {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: blue;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+
+}
+.container-b h1 {
+  color: rgb(109, 109, 248); 
+  position: absolute; 
+  left: 25%; 
+  font-style: italic;
+}
+.form-example{
+  width: 250px ;
+  position:absolute;
+   left: 20px; 
+  top: 43% ;
+}
+#tabl{
+  width: 250px;  
+  margin-right:1px;   
+  padding: 12px ;  
+  height: 350px; 
+  background-color:rgb(90, 90, 247); 
+  border-radius: 10px; 
+}
+#tabl h3{
+  margin-left: 10%;
+}
+#where{
+  margin: 10px;
+}
+#checkin{
+  margin: 10px; 
+  width: 185px;
+}
+#checkout{
+  margin: 10px;
+  width: 185px;
+}
+#passenger{
+  margin: 10px;
+}
+#sub-ser{
+  margin: 10px; 
+  background-color:blue; 
+  position:absolute;
+   left: 57px;
+   top: 260px ;
+   width: 89px;
+   border-radius: 5px; 
+   color:white;
+  font-weight: bold;
+}
+
+.info{
+  position:absolute;
+  top: 76%;
+  left: 900px;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  display: grid;
+  background-color:white;
+  box-shadow: 3px 3px 3px 3px #555;
+  text-align: center;
+}
+#image1{
+  width: 300px ; 
+  height: 67vh;
+ 
+}
+#image2{
+  width:  300px ;
+  height: 67vh; 
+  position:absolute;
+   right: 0px;
+  
+   
+}
+#image3{
+  width:  300px ;
+  height: 67vh; 
+  position:absolute; 
+  margin-left: 355px;
+}
+.book{
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 40px;
+  width: 98px;
+  position: absolute;
+  left: 540px;
+  top: 80%;
+  border-radius: 6px;
+  background-color: blue;
+ 
+}
+.book a {
+  color: white; 
+  text-decoration:none;
+}
+.containaer-card{
+  display: flex;
+  direction: row;
+  position: absolute; 
+  left: 500px; 
+  top: 150%; 
+  width: 800px;
+  height: 20vh;
+  
+  flex-wrap: wrap;
+}
+.card-header  {
+
+ color: blue; 
+ text-align: center;
+}
+
+
+  
+
+.border-primary{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+}
+.border-secondary{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+}
+.border-success{
+   flex: 1;
+   margin: 10px;
+   box-sizing: border-box;
+   border-radius: 5px; 
+   box-shadow: 3px 3px 3px 3px #555;
+   background-color:white;
+  }
+  
+  @media  (max-width: 1000px){
+    .info{
+      position:absolute;
+      top: 940px;
+      left: 380px;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 500px;
+      border-radius: 6px;
+      box-sizing: border-box;
+      background-color:white;
+      box-shadow: 3px 3px 3px 3px #555;
+      font-size: 10px;
+      text-align: center;
+      
+  }
+  .containaer-card{
+    display: flex;
+    direction: row;
+    position: absolute; 
+    left: 180px; 
+    top: 1200px; 
+    width: 400px;
+    height: 60px;
+    font-size: 10px;
+    flex-wrap: wrap;
+}
+.form-example{
+  width: 250px ;
+  position:absolute;
+   left: 250px; 
+  top: 43% ;
+}
+.book{
+ 
+  position: absolute;
+  left: 220px;
+  top: 85%;
+ 
+  
+}
+.header h1 {
+
+  position:absolute;
+  top: 30px;
+  left: 140px;
+  font-size: 15px;
+
+
+}
+.container img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  
+  
+  }
+  .signup-btn{
+    width: 60px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+
+  }
