@@ -45,17 +45,29 @@ if(hotelId === ''){
         fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=${hotelId}`, requestOptions)
             .then(result => result.json())
             .then(result => {
+				var loc1 = [result.data.hotel.longitude, result.data.hotel.latitude]
+				console.log(result)
+				mapboxgl.accessToken = 'pk.eyJ1Ijoia2c0MDY4MDUiLCJhIjoiY2ttdzM5ZGdpMGI2eTJudXQ3cmEweGt3bSJ9.mqwbXCjoewW9zXEjXWCRDw';
+				var map = new mapboxgl.Map({
+					container: 'map-result',
+					style: 'mapbox://styles/mapbox/streets-v11',
+					center: loc1, // starting position
+					zoom: 9 // starting zoom
+				});
+				map.addControl(new mapboxgl.NavigationControl());
+				// Set options
+				var marker = new mapboxgl.Marker({
+					color: "red",
+					draggable: false
+				}).setLngLat(loc1)
+				  .addTo(map);
 				title.innerHTML =`${result.data.hotel.type.toUpperCase()} ${result.data.hotel.name.toUpperCase()}`;
 				var img = document.createElement('img');
-				if(result.data.hotel.hasOwnProperty("media")){
-					img.setAttribute('src', result.data.hotel.media[0].uri);
-					img.style.height = '300px';
-					img.style.width = '300px';
-					console.log(img);
-					divElement.appendChild(img);
-				}
 
-				result.data.offers.forEach(element => {
+				var h3 = document.getElementById('h3')
+				h3.innerHTML = result.data.hotel.name
+				h3.style.fontFamily = "roboto"
+				/*result.data.offers.forEach(element => {
 					var divTitle = document.createElement('div');
 					var divContent = document.createElement('div');
 					divTitle.innerHTML = element.room.typeEstimated.category;
@@ -84,7 +96,7 @@ if(hotelId === ''){
 					pMethodPay.style.marginBottom = '3px';
 					element.policies.guarantee.acceptedPayments.methods.forEach(element => {
 						pMethodPay.appendChild(document.createTextNode(element));
-					});*/
+					});
 
 					var pElementBoarType = document.createElement('p');
 					pElementBoarType.style.marginBottom = '3px';
@@ -121,7 +133,7 @@ if(hotelId === ''){
                     divRooms.setAttribute('class', 'containaer-card');
 					divRooms.appendChild(divContent);
 					divElement.appendChild(divRooms);
-				});
+				});*/
 				console.log(result);
 			})
             .catch(error => console.log('error', error));
