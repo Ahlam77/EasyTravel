@@ -11,11 +11,15 @@
     padding: 0;
 }
 
+.container .navbar {
+    background-color: white;
+}
+
 .bg-image {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 50%;
+    padding-bottom: 56%;
 }
 
 .container img {
@@ -36,7 +40,7 @@
     text-align: left;
     color: blue;
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 12%;
 
 
@@ -63,8 +67,6 @@
     left: 1100px;
     top: 39px;
     position: absolute;
-
-
     border-radius: 6px;
     background-color: blue;
 
