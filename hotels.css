@@ -2,7 +2,7 @@
     font-family: Roboto;
     background-color: rgb(245, 245, 245);
     display: grid;
-    grid-template-rows: 15vh 20vh 1fr 20vh;
+    grid-template-rows: 15vh 20vh 1fr 30vh;
     grid-gap: 5px;
 }
 
@@ -35,9 +35,12 @@
 }
 
 .footer{
+    display: grid;
     grid-column: 1;
     grid-row: 4;
+    grid-template-areas: "col-md-1 .col-md-2 .col-md-3";
     background-color:  rgb(90, 90, 247);
+       
 }
 
 .nav h3{
@@ -82,6 +85,7 @@
     text-align: center;
     top: 70px;
     top: 62px;
+    margin-right: 120px;
     width: 115px;
 }
 
@@ -221,4 +225,28 @@ img{
 }
 #hotel-name{
     margin: 55px 0 10px;
+}
+.footer-logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 10px;
+
+
+}
+.col-md-1{
+    text-align: center;
+
+    }
+.col-md-1 p{
+    float: left;
+    margin-left: 20px;
+    margin-top: 50px;
+    color: white;
+}
+.col-md-2,.col-md-3{
+    margin-top: 50px;
+    color: white;
 }
