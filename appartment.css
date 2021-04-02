@@ -1,421 +1,153 @@
-body {
-    width: 100%;
-    height: 150vh;
-
-}
 
 
-
-.signup-btn {
-
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 40px;
-    width: 98px;
-    left: 1313px;
-    top: 70px;
-    height: 36px;
-    width: 115px;
-    left: 1306px;
-    top: 62px;
-    border-radius: 6px;
-    background-color: blue;
-
-
-
-}
-
-.container img {
-    width: 100px;
-    height: 100px;
-    float: left;
-
-
-}
-
-.header h1 {
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: blue;
-    position: absolute;
-    top: 50%;
-    left: 12%;
-
-}
-
-
-.ser-bar {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-top: 75px;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 150px;
-    background-color: blue;
-
-    border-radius: 6px;
-
-
-
-
-}
-
-#where {
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 20px;
-}
-
-#checkin {
-    position: absolute;
-    top: 1%;
-    left: 29%;
-    width: 130px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 1px;
-
-}
-
-#checkout {
-    position: absolute;
-    top: 1%;
-    left: 43%;
-    width: 130px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 15px;
-
-}
-
-#guess {
-    position: absolute;
-    top: 1%;
-    left: 60%;
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    margin: 60px 15px;
-
-}
-
-#search {
-    position: absolute;
-    top: 38%;
-    left: 85%;
-    border-radius: 6px;
-    background-color: green;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 40px;
-    width: 98px;
-}
-
-#tarvel-w {
-    position: absolute;
-    top: 100px;
-    left: 70px;
-    color: white;
-
-}
-
-#free-c {
-    position: absolute;
-    top: 100px;
-    left: 300px;
-    color: white;
-
-}
-
-#travel-b {
-    position: absolute;
-    top: 100px;
-    left: 500px;
-    color: white;
-}
-
-.result-hotels {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 150px;
-    transform: translate(-50%, -50%);
-    width: 900px;
-    height: 150px;
-    border-radius: 6px;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-
-
-
-
-}
-
-#result-ho1 {
-
-    box-shadow: 3px 3px 3px 3px #555;
-    border-radius: 6px;
-    text-align: center;
-    width: 100%;
-    height: 35vh;
-    text-align: left;
-
-}
-
-#image1 {
-    width: 300px;
-    height: 100%;
-    float: left;
-}
-
-#p1 {
-    position: absolute;
-    right: 1%;
-    text-align: left;
-    color: blue;
-    position: absolute;
-    right: 1%;
-    text-align: left;
-    top: 10%;
-
-
-
-}
-
-.deal1 {
-    position: absolute;
-    top: 78%;
-    left: 80%;
-    border-radius: 6px;
-    background-color: blue;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 36px;
-    width: 115px;
-}
-
-.deal1 a {
-    color: white;
-    text-decoration: none;
-}
-
-#result-ho2 {
-
-    box-shadow: 3px 3px 2px 2px #555;
-    border-radius: 6px;
-    width: 100%;
-    height: 35vh;
-    text-align: left;
-
-}
-
-#image2 {
-    width: 300px;
-    height: 100%;
-    float: left;
-}
-
-#p2 {
-    position: absolute;
-    right: 1%;
-    text-align: left;
-    color: blue;
-    position: absolute;
-    right: 0px;
-    text-align: left;
-    top: 10%;
-
-
-
-
-}
-
-.deal2 {
-    position: absolute;
-    top: 98%;
-    left: 80%;
-    border-radius: 6px;
-    background-color: blue;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 21px;
-    color: white;
-    letter-spacing: 0em;
-    text-align: center;
-    height: 36px;
-    width: 115px;
-}
-
-.deal2 a {
-    color: white;
-    text-decoration: none;
-}
-
-@media (max-width: 700px) {
-    body {
+       html, body {
         width: 100%;
-        height: 100vh;
+        height: 100%;
+     }
+       .container{
+        background-color: rgb(245, 245, 245);
+        display: grid;
+        grid-template-rows: 15vh 20vh 1fr 30vh;
+        grid-gap: 5px;
     }
-
-    .navbar {
-        width: 410px;
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1;
+        grid-row: 1;
     }
-
-    .signup-btn {
-        font-size: 10px;
-        height: 26px;
-        width: 50px;
-
-
-
-
+    
+    .nav{
+        border-radius: 8px;
+        grid-column: 1;
+        grid-row: 2;
+        background-color: rgb(90, 90, 247);
+        color: white;
+        text-align: center;
+      
+        
     }
-
-    .container img {
-        width: 50px;
-        height: 50px;
+    
+    .body{
+        background-color: white;
+        border: 2px solid blue;
+        border-radius: 5px;
+        display: flex;
+        grid-column: 1;
+        grid-row: 3;
+        padding: 10px;
+    }
+    
+    .footer{
+        display: grid;
+        grid-column: 1;
+        grid-row: 4;
+        grid-template-areas: "col-md-1 .col-md-2 .col-md-3";
+        background-color:  rgb(90, 90, 247);
+       
+    }
+    
+    .nav h3{
+        font-size: 1.7em;
+        margin-bottom: 3px;
+    }
+    
+    #title-icon{
+        color: blue;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: 0em;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    #icon{
+        display: flex;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    #icon img{
+        height: 108px;
+        width: 118px;
+    }
+    
+    .signup-btn{
+        background-color: blue;
+        border-radius: 6px;
+        color: white;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        height: 40px;
+        line-height: 21px;
+        letter-spacing: 0em;
+        margin-right: 10px;
+        margin-top: 45px;
+        text-align: center;
+        top: 70px;
+        top: 62px;
+        margin-right: 120px;
+        width: 115px;
+    }
+    
+    .nav input{
+        border-color: rgb(245, 245, 245);
+        border-radius: 3px;
+        height: 36px;
+        width: 200px;
+    }
+    
+    #search{
+        background-color: blue;
+        border-color: black;
+        border-radius: 6px;
+        color: white;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+        height: 42px;
+        width: 150px;
+    }
+    
+    #map{
+        height: 420px;
+        width: 770px;
+        margin-right: 10px;
+    }
+    
+    #hotels-info{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        width: 100vh;
+    }
+    .footer-logo {
+        width: 80px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        position: absolute;
+        left: 10px;
+    
+    
+    }
+    .col-md-1{
+        text-align: center;
+    
+        }
+    .col-md-1 p{
         float: left;
-
-
+        margin-left: 20px;
+        margin-top: 50px;
+        color: white;
     }
-
-    .header h1 {
-
-        font-size: 12px;
-        position: absolute;
-        top: 15px;
-        left: 50px;
-
+    .col-md-2,.col-md-3{
+        margin-top: 50px;
+        color: white;
     }
-
-    .ser-bar {
-        position: absolute;
-        top: 30%;
-        left: 200px;
-
-        width: 400px;
-        height: 150px;
-
-    }
-
-    #where {
-        width: 80px;
-        height: 25px;
-
-    }
-
-    #checkin {
-
-        width: 58px;
-        height: 25px;
-    }
-
-    #checkout {
-
-        width: 58px;
-        height: 25px;
-    }
-
-    #guess {
-
-        width: 80px;
-        height: 25px;
-        font-size: 10px;
-    }
-
-    #search {
-
-        font-size: 10px;
-        height: 30px;
-        width: 40px;
-    }
-
-    #tarvel-w {
-        position: absolute;
-        top: 100px;
-        left: 30px;
-        font-size: 8px;
-    }
-
-    #free-c {
-        position: absolute;
-        top: 100px;
-        left: 150px;
-        font-size: 8px;
-
-
-    }
-
-    #travel-b {
-        position: absolute;
-        top: 100px;
-        left: 250px;
-        font-size: 8px;
-
-    }
-
-    .result-hotels {
-
-        width: 410px;
-        height: 50px;
-        font-size: 10px;
-        position: absolute;
-        top: 300px;
-        left: 200px;
-    }
-
-
-    #image1 {
-        width: 100px;
-        height: 100%;
-
-    }
-
-    .deal1 {
-        height: 26px;
-        width: 65px;
-    }
-
-    #image2 {
-        width: 100px;
-        height: 100%;
-
-    }
-
-    .deal2 {
-        height: 26px;
-        width: 65px;
-    }
-}
