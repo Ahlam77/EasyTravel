@@ -31,4 +31,16 @@ if(idOffers === ''){
 		})
         .then(result => console.log(result))
         .catch(error => console.log('error', error));
+
+		function resultRooms(){
+			var requestOptions = {
+				headers: {
+					'Authorization':'Bearer ' + accesToken
+				},
+			};
+			fetch(`https://test.api.amadeus.com/v2/shopping/hotel-offers/${idOffers}`, requestOptions)
+			.then(result => result.json())
+			.then(data => console.log(data))
+			.catch(error => console.log('error', error));
+		}
 }

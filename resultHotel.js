@@ -11,7 +11,7 @@ const urlParams = new URLSearchParams(window.location.search);
 var hotelId = '';
 var title = document.getElementsByTagName('h1')[1];
 var divElement = document.getElementsByClassName('info')[0];
-var divRooms = document.createElement('div');
+//var divRooms = document.createElement('div');
 
 if(urlParams.has('hotelId')){
 	hotelId = urlParams.get('hotelId');
@@ -52,7 +52,7 @@ if(hotelId === ''){
 					container: 'map-result',
 					style: 'mapbox://styles/mapbox/streets-v11',
 					center: loc1, // starting position
-					zoom: 9 // starting zoom
+					zoom: 15 // starting zoom
 				});
 				map.addControl(new mapboxgl.NavigationControl());
 				// Set options
@@ -62,11 +62,38 @@ if(hotelId === ''){
 				}).setLngLat(loc1)
 				  .addTo(map);
 				title.innerHTML =`${result.data.hotel.type.toUpperCase()} ${result.data.hotel.name.toUpperCase()}`;
-				var img = document.createElement('img');
+				var divResult = document.getElementById('content-result');
+				divResult.style.display = 'flex';
+				divResult.style.justifyContent = 'space-between';
 
-				var h3 = document.getElementById('h3')
-				h3.innerHTML = result.data.hotel.name
-				h3.style.fontFamily = "roboto"
+				var divResultRoom = document.getElementById('result-rooms');
+
+				
+
+				result.data.offers.forEach(element => {
+					var divGlobelElement = document.createElement('div');
+					divGlobelElement.style.display = 'flex';
+					var divImg = document.createElement('div');
+					var img = document.createElement('img');
+					img.setAttribute('src', 'Image/hotel-name.jpg');
+					img.style.width = '150px';
+					img.style.height = '150px';
+					divImg.appendChild(img)
+					divGlobelElement.appendChild(divImg)
+
+					var divPElement = document.createElement('div');
+
+					var pTagTypeRoom = document.createElement('p');
+					pTagTypeRoom.innerHTML = element.room.typeEstimated.category;
+					pTagTypeRoom.style.marginTop = '0px';
+					pTagTypeRoom.style.marginLeft = '10px';
+					pTagTypeRoom.style.paddingTop = '0px';
+					divPElement.appendChild(pTagTypeRoom);
+
+					divGlobelElement.appendChild(divPElement)
+					divResultRoom.appendChild(divGlobelElement);
+
+				});
 				/*result.data.offers.forEach(element => {
 					var divTitle = document.createElement('div');
 					var divContent = document.createElement('div');
@@ -126,7 +153,8 @@ if(hotelId === ''){
 					spanElementDeal.style.paddingLeft = '10px';
 					spanElementDeal.style.paddingRight = '10px';
 					spanElementDeal.style.marginLeft = '150px';
-					divCart.style.paddingBottom = '5px';
+					divElement.appendChild(spanElementDeal);
+					/*divCart.style.paddingBottom = '5px';
 					divCart.appendChild(spanElementDeal);
 
 					divContent.appendChild(divCart);
@@ -134,7 +162,6 @@ if(hotelId === ''){
 					divRooms.appendChild(divContent);
 					divElement.appendChild(divRooms);
 				});*/
-				console.log(result);
 			})
             .catch(error => console.log('error', error));
     }
