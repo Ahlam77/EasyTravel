@@ -231,11 +231,43 @@ img{
 #hotel-name{
     margin: 55px 0 10px;
 }
+
+#map-result{
+    height: 300px;
+    position: sticky;
+    top: 10px;
+}
+
+
+/*body{
+    width: 100%;
+    height: 150vh;
+
+}
+.container img {
+    width: 100px;
+    height: 100px;
+    float: left;
+
+
+}
+
+.header h1 {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: blue;
+=======
 .footer-logo {
     width: 70px;
     height: 70px;
     margin-top: -10px;
     margin-bottom: 15px;
+>>>>>>> 0443a00f12240968eac6526ff272ef08bcdf0415
     position: absolute;
     left: 10px;
 
