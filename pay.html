@@ -25,79 +25,79 @@
     </section>
     <div class="wapper">
         <h2>Payment Form</h2>
-        <form method="POST">
         <h4>Account</h4>
         <div class="input-group">
             <div class="input-box">
-                <input type="text" placeholder="Full Name" required  class="name" style="width: 450px;"><i class="fa fa-user icon"></i>
+                <input type="text" placeholder="Full Name" required  id="full-name" class="name" style="width: 450px;"><i class="fa fa-user icon"></i>
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Nick Name" required  class="name" ><i class="fa fa-user icon" ></i>
+                <input type="text" placeholder="Nick Name" required  id="nick-name" class="name" ><i class="fa fa-user icon" ></i>
             </div>
         </div>
         <div class="input-group">
             <div class="input-box">
-                <input type="mail" placeholder="Email" required class="name"><i class="fa fa-envelope icon"></i>
+                <input type="mail" placeholder="Email" required id="email" class="name"><i class="fa fa-envelope icon"></i>
             </div>
         </div>
         <div class="input-group">
             <div class="input-box">
                 <h4>Date of Birth</h4>
-                <input type="text" placeholder="DD" class="dob">
-                 <input type="text" placeholder="MM" class="dob">
-                  <input type="text" placeholder="YYY" class="dob">
+                <input type="text" placeholder="DD" id="day" class="dob">
+                 <input type="text" placeholder="MM" id="month" class="dob">
+                  <input type="text" placeholder="YYY" id="year" class="dob">
             </div>
             <div class="input-box">
-                <h4>Gendar</h4>
-                <input type="radio" id="b1" name="gendar" checked class="radio">
+                <h4>Gender</h4>
+                <input type="radio" id="gendar-mal" name="gendar" checked class="radio" value="Man">
                 <label for="b1">Male</label>
-                <input type="radio" id="b2" name="gendar" checked class="radio">
+                <input type="radio" id="gendar-femel" name="gendar" checked class="radio" value="Women">
                 <label for="b2">Female</label>
             </div>
         </div>
         <div class="input-group">
             <div class="input-box">
                 <h4>Payment Details</h4>
-                <input type="radio" name="pay" id="bc1" checked class="radio">
+                <input type="radio" name="pay" id="pay-cart" checked class="radio" value="Cart">
                 <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card </span></label>
-                <input type="radio" name="pay" id="bc2" checked class="radio">
+                <input type="radio" name="pay" id="pay-pal" checked class="radio" value="PayPal">
                 <label for="bc2"><span> <i class="fa fa-cc-paypal"></i></span>Paypal</label>
             </div>
         </div>
         <div class="input-group">
             <div class="input-box">
-                <input type="tel" placeholder="Card Number " required class="name"><i class="fa fa-credit-card icon"></i>
+                <input type="tel" placeholder="Card Number " id="cart-number" required class="name"><i class="fa fa-credit-card icon"></i>
             </div>
         </div>
         <div class="input-group">
             <div class="input-box">
-                <input type="tel" placeholder="Card CVC" required class="name" style=" width: 450px;" >
+                <input type="tel" placeholder="Card CVC" required id="card-CVC" class="name" style=" width: 450px;" >
             <i class="fa fa-user icon"></i>
             </div>
             <div class="input-box">
-                <select>
-                    <option> 01 jun </option>
-                    <option> 02 jun </option>
-                    <option> 03 jun </option>
+                <select id="monthExpire">
+                    <option> 01 </option>
+                    <option> 02 </option>
+                    <option> 03 </option>
                 </select>
-                <select>
+                <select id="yearExpire">
                     <option> 2021 </option>
                     <option> 2022 </option>
                     <option> 2023</option>
                 </select>
             </div>
         </div>
-        <div class="input-group">
+        <!--<div class="input-group">
             <div class="input-box">
-                <button type="submit">PAY NOW</button>
+                <button id="bnt-pay">PAY NOW</button>
             </div>
-        </div>
-        </form>
+        </div>-->
+
+        <button id="valid">Pay Now</button>
     </div>
 
 
 
-    <script src="pay.js"></script>
+    <!--<script src="pay.js"></script>-->
 </body>
 
 </html>
