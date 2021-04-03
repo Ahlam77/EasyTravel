@@ -10,8 +10,8 @@ const urlParams = new URLSearchParams(window.location.search);
 
 var idRooms = '';
 
-if(urlParams.has('id')){
-    idRooms = urlParams.get('id');
+if(urlParams.has('idRoom')){
+    idRooms = urlParams.get('idRoom');
 }
 
 if(idRooms === ''){
@@ -26,14 +26,14 @@ if(idRooms === ''){
 
     var dateOfBrith = day + '-' + month + '-' + year;
 
-    var genre;
+    var genre ='';
     if(document.getElementById('gendar-mal').checked){
         genre = document.getElementById('gendar-mal').value
     }else if(document.getElementById('gendar-femel').checked){
-        genre = document.getElementById(gendar-femel).value;
+        genre = document.getElementById('gendar-femel').value;
     }
 
-    var paymentMethod;
+    var paymentMethod= '';
     if(document.getElementById('pay-cart').checked){
         paymentMethod = document.getElementById('pay-cart').value;
     }else if(document.getElementById('pay-pal').checked){
@@ -44,26 +44,28 @@ if(idRooms === ''){
 
     var cardCVC = document.getElementById('card-CVC');
 
-    var monthEspire = document.getElementById('monthExpire').value;
-    var yearExpire = document.getElementById('yearExpire').value;
-    var dateExpire = monthEspire +'/' + yearExpire;
+    /*var monthEspire = document.getElementById('monthExpire').selected;
+    var yearExpire = document.getElementById('yearExpire').selected;
+    var dateExpire = monthEspire +'/' + yearExpire;*/
 
     function getPay(){
-        if(fullName !== '' && nickName != '' && email !== '' && dateOfBrith !== '' && cartNumber !== '' && cardCVC !== '' && dateExpire !== ''){
+        if(fullName === ''){
+            console.log('null');
+        }else{
             var url = new URL("http://localhost:8000/resultPrenota.html");
+            console.log(url);
 
             url.searchParams.append('fullName', fullName);
-            url.searchParams.append('nickName', nickName);
+            /*url.searchParams.append('nickName', nickName);
             url.searchParams.append('email', email);
             url.searchParams.append('dateOfBrith', dateOfBrith);
             url.searchParams.append('genre', genre);
             url.searchParams.append('paymentMethod', paymentMethod);
-            url.searchParams.append('cardNumber', cartNumber);
-            url.searchParams.append('dateExpire', dateExpire);
+            url.searchParams.append('cardNumber', cartNumber);*/
             location.replace(url);
         }
 
     }
 
-    document.getElementById('bnt-pay').addEventListener('click', getPay)
+    document.getElementById('valid').addEventListener('click', getPay);
 }

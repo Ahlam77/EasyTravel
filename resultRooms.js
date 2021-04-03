@@ -10,8 +10,8 @@ const urlParams = new URLSearchParams(window.location.search);
 
 var idOffers = '';
 
-if(urlParams.has('id')){
-    idOffers = urlParams.get('id');
+if(urlParams.has('fullName')){
+    idOffers = urlParams.get('fullName');
 }
 
 if(idOffers === ''){
