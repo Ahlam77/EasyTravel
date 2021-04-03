@@ -15,7 +15,6 @@ var divResultElement = document.getElementsByClassName('body')[0];
 
 const urlParams = new URLSearchParams(window.location.search); 
 
-
 var city = '';
 if(urlParams.has('city')){
 	city = urlParams.get('city');

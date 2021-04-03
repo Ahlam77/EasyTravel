@@ -110,14 +110,14 @@
 }
 
 #map{
-    height: 420px;
+    height: 90vh;
     width: 770px;
     margin-right: 10px;
+    position: sticky;
+    top: 10px;
     
 }
-#map > div{
-    position: fixed;
-}
+
 #hotels-info{
     display: flex;
     flex-wrap: wrap;
@@ -134,26 +134,31 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    height: 50%;
-    margin: 0 auto;
+    height: 500px;
+    margin: 0px;
 
 }
-.area > div{
+/*.area > div{
     padding: 0em;
     background-color: rgba(0, 0, 0, 0.274);
     border-radius: 12px;
     height: 500px;
-}
+}*/
 #area1{
     grid-area: area1;
+    height: 500px;
 }
 #area2{
     grid-area: area2;
     height: 245px;
+    padding: 0px;
+    margin-bottom: 5px;
 }
 #area3{
     grid-area: area3;
     height: 245px;
+    margin-top: 0px;
+    padding: 0px;
 }
 img{
     background-size: contain;
