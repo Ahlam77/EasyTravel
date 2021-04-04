@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(Image/travel.jpg);
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.527);
+    padding: 93px 50px ; 
+    width: 400px;
+    margin: 119px auto;
+}
+
+#p-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+    border: none;
+}
+#male-or-female{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+select{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 15px 15px auto;
+    border: none;
+    width: 200px;
+}
+#male{
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}
+#female{
+    color: white;
+    padding: 10px;
+    margin: 3px;
+}
+#select1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+#pay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#select-date{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+#cart-date{
+     width: 60px;
+     margin-left: 60px;
+}
+#cart-year{
+     width: 70px;
+     margin-right: 80px;
+}
+#check1{
+    margin-top: 33px;
+}
+#check2{
+    margin-top: 33px;
+}
+#payment-button{
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    transition: ease-in-out;
+}
+#payment-button:hover{
+    background-color: rgb(87, 224, 87);
+    color: black;
+}
+#button{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+}
+#button:hover{
+    background-color: rgb(87, 224, 87);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#checkbox1{
+    width: 50%;
+    margin-left: 45px;
+    margin-right: 0;
+    border-right: 1px solid black;
+    border-top-right-radius:unset ;
+    border-bottom-right-radius: unset;
+    cursor: pointer;
+}
+#checkbox1:checked{
+    background-color: rgb(87, 224, 87);
+    color: black;
+}
+#checkbox2{
+    width: 50%;
+    margin-right: 45px;
+    margin-left: 0;
+    border-left: 1px solid black;
+    border-top-left-radius:unset ;
+    border-bottom-left-radius: unset;
+    cursor: pointer;
+}
+#checkbox2:checked{
+    background-color: rgb(87, 224, 87);
+    color: black;
+}

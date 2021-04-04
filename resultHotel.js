@@ -72,7 +72,6 @@ if(hotelId === ''){
 				console.log(result);
 
 				title.innerHTML =`${result.data.hotel.type.toUpperCase()} ${result.data.hotel.name.toUpperCase()}`;
-<<<<<<< HEAD
 				var img = document.createElement('img');
 
 				var h3 = document.getElementById('h3')
@@ -184,90 +183,6 @@ if(hotelId === ''){
 
 					//divCart.appendChild(pMethodPay);
 					divCart.appendChild(spanCard);
-=======
-				title.style.color = 'rgb(111, 111, 255)';
-				title.style.textShadow = '5px 5px 8px rgb(11, 11, 255)';
-				var divResult = document.getElementById('content-result');
-				divResult.style.display = 'flex';
-				divResult.style.justifyContent = 'space-between';
-
-				var divResultRoom = document.getElementById('result-rooms');
-				divResultRoom.style.height = '400px';
-				divResultRoom.style.overflowY = 'auto';
-
-				
-
-				result.data.offers.forEach(element => {
-					var divGlobelElement = document.createElement('div');
-					divGlobelElement.style.display = 'flex';
-					var divImg = document.createElement('div');
-					var img = document.createElement('img');
-					img.setAttribute('src', 'Image/hotel-name.jpg');
-					img.style.width = '150px';
-					img.style.height = '150px';
-					divImg.appendChild(img)
-					divGlobelElement.appendChild(divImg)
-
-					var divPElement = document.createElement('div');
-
-					/*var divImagePTag = document.createElement('div');
-
-					var pTagImage1 = document.createElement('p');
-
-					var image1 = document.createElement('img');
-					image1.setAttribute('src', 'Image/terrasse.jpg');
-					image1.style.height = '77px';
-					image1.style.width = '150px';
-					divImagePTag.appendChild(image1);
-
-					var pTagImage2 = document.createElement('p');
-
-					var image2 = document.createElement('img');
-					image2.setAttribute('src', 'Image/piscine.jpg');
-					image2.style.height = '77px';
-					image2.style.width = '150px';
-					divImagePTag.appendChild(image2);
-					divImagePTag.style.marginLeft = '10px';
-
-					divGlobelElement.style.height = '150px';
-					divGlobelElement.appendChild(divImagePTag);*/
-
-					var pTagTypeRoom = document.createElement('p');
-					pTagTypeRoom.innerHTML = element.room.typeEstimated.category;
-					pTagTypeRoom.style.marginTop = '0px';
-					pTagTypeRoom.style.marginLeft = '10px';
-					pTagTypeRoom.style.paddingTop = '0px';
-					divPElement.appendChild(pTagTypeRoom);
-
-					var spanAdress = document.createElement('span');
-					spanAdress.appendChild(document.createTextNode(result.data.hotel.address.lines[0]));
-					spanAdress.appendChild(document.createTextNode(', ' + result.data.hotel.address.cityName));
-					spanAdress.appendChild(document.createTextNode(', ' + result.data.hotel.address.postalCode));
-					spanAdress.appendChild(document.createTextNode(', ' + result.data.hotel.address.countryCode));
-					spanAdress.style.marginLeft = '10px';
-
-					var pSpan = document.createElement('p');
-					pSpan.appendChild(spanAdress);
-					divPElement.appendChild(pSpan);
-
-					if(result.data.hotel.hasOwnProperty("contact")){
-						var pTagEmail = document.createElement('p');
-						pTagEmail.innerHTML = 'Email Adress: ' + result.data.hotel.contact.email;
-						pTagEmail.style.marginLeft = '10px';
-						divPElement.appendChild(pTagEmail);
-					}
-
-					var divPriceDeals = document.createElement('div');
-					divPriceDeals.style.display = 'flex';
-					divPriceDeals.style.justifyContent = 'space-between';
-
-					var pTagPrice = document.createElement('p');
-					pTagPrice.innerHTML = 'Price: ' + element.price.total + '$';
-					pTagPrice.style.marginLeft = '10px';
-					divPriceDeals.appendChild(pTagPrice);
-
-					var pTagDeals = document.createElement('p');
->>>>>>> 52dfe87c82ba327a1711ffe45ccfb91e380a67cb
 					
 					var aDeals = document.createElement('a');
 					aDeals.innerHTML = 'Deals';
@@ -285,36 +200,6 @@ if(hotelId === ''){
 					pTagDeals.appendChild(aDeals);
 					divPriceDeals.appendChild(pTagDeals);
 
-<<<<<<< HEAD
-					var pElementPrice = document.createElement('p');
-					pElementPrice.style.marginTop = '3px';
-					pElementPrice.style.marginBottom = '3px';
-					pElementPrice.innerHTML = 'Price: ' + element.price.total + '$';
-					divCart.appendChild(pElementPrice);
-
-					var spanElementDeal = document.createElement('span');
-					var aElementSpan = document.createElement('a');
-					aElementSpan.setAttribute('href', '/pay.html?id=' + element.id);
-					aElementSpan.innerHTML = 'Deals';
-					aElementSpan.style.textDecoration = 'none';
-					aElementSpan.style.color = 'white';
-					spanElementDeal.appendChild(aElementSpan); 
-					spanElementDeal.style.border = '1px solid black'
-					spanElementDeal.style.backgroundColor = 'rgb(90, 90, 247)';
-					spanElementDeal.style.borderRadius = '5px';
-					spanElementDeal.style.paddingLeft = '10px';
-					spanElementDeal.style.paddingRight = '10px';
-					spanElementDeal.style.marginLeft = '150px';
-					divCart.style.paddingBottom = '5px';
-					divCart.appendChild(spanElementDeal);
-
-					divContent.appendChild(divCart);
-                    divRooms.setAttribute('class', 'containaer-card');
-					divRooms.appendChild(divContent);
-					divElement.appendChild(divRooms);*/
-				});
-				console.log(result);
-=======
 					
 					divPElement.appendChild(divPriceDeals);
 					
@@ -327,7 +212,6 @@ if(hotelId === ''){
 					divResultRoom.appendChild(divGlobelElement);
 
 				});
->>>>>>> 52dfe87c82ba327a1711ffe45ccfb91e380a67cb
 			})
             .catch(error => console.log('error', error));
     }
