@@ -28,14 +28,14 @@
                 <div id="p-info">
                     <input id="fname" type="text" placeholder="First Name" required>
                     <input id="lname" type="text" placeholder="First Last-name" required>
-                    <input id="date" type="date" placeholder="Date de naissance" required>
-                    <input id="Numero" type="number" placeholder="Numero" required>
+                    <input id="date" type="date" placeholder="Date of Birth" required>
+                    <input id="Numero" type="number" placeholder="Phone number" required>
                 </div>
                 <div id="male-or-female">
                     <label id="male" for="male">Male</label>
-                    <input id="checkbox1" type="radio" name="checkbox" required>
+                    <input id="checkbox1" type="radio" name="checkbox" value="Man" required>
                     <label id="female" for="female">Female</label>
-                    <input id="checkbox2" type="radio" name="checkbox" required>
+                    <input id="checkbox2" type="radio" name="checkbox" value="woman" required>
                 </div>
                 <!--General Info-->
                 <div id="select1">
@@ -51,31 +51,31 @@
                         MasterCard
                         <!-- <i class="fab fa-cc-mastercard fa-5x" style="color: white;"></i>-->
                     </label>
-                    <input name="checkbox1" id="check1" type="radio" required>
+                    <input name="checkbox1" id="check1" type="radio" value="MasterCart" required>
                     <label class="paypal" for="payPal">
                         Paypal
                         <!-- <i class="fab fa-cc-paypal fa-5x" style="color: white;"></i> -->
                     </label>
-                    <input name="checkbox1" id="check2" type="radio" required>
+                    <input name="checkbox1" id="check2" type="radio" value="Paypal" required>
                 </div>
                 <div id="card-info">
-                    <input type="number" placeholder="Numero de carte de credit" required>
-                    <input type="number" placeholder="CVC" required>
+                    <input type="tel" placeholder="Numero de carte de credit" id="card-number" required>
+                    <input type="tel" placeholder="CVC" id="cardCVC" required>
                 </div>
                 <div id="select-date">
                     <select name="date" id="cart-date">
                         <option value="01">01</option>
-                        <option value="02"></option>
-                        <option value="03"></option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
                     </select>
                     <select name="year" id="cart-year">
                         <option value="2021">2021</option>
-                        <option value="2022"></option>
-                        <option value="2023"></option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
                     </select>
                 </div>
                 <div id="payment-button">
-                    <input id="button" onclick="myFunction()" type="submit" formtarget="_blank" value="Validate">
+                    <input id="button" type="submit" formtarget="_blank" value="Validate">
                 </div>
 
             </div>
@@ -83,30 +83,7 @@
         </div>
     </div>
 
-    <script>
-        function check1() {
-            document.getElementById("checkbox1").checked = true;
-            document.getElementById("checkbox2").checked = false;
-        }
-        function check2() {
-            document.getElementById("checkbox1").checked = false;
-            document.getElementById("checkbox2").checked = true;
-        }
-        function check3() {
-            document.getElementById("check1").checked = true;
-            document.getElementById("check2").checked = false;
-        }
-        function check4() {
-            document.getElementById("check1").checked = false;
-            document.getElementById("check2").checked = true;
-        }
-
-        function myFunction() {
-            Array.from(document.querySelectorAll('container input')).reduce((acc, input) => ({ ...acc, [input.id]: input.value }), {
-            })
-        }
-    </script>
-    <!--<script src="payment.js"></script>-->
+    <script src="pay.js"></script>
 </body>
 
 </html>
