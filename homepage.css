@@ -164,15 +164,19 @@
     font-size: 15px;
     color: blue;
     font-weight: bold;
+    
 }
 
 .input::placeholder {
     color: black !important;
+    
 }
 
 .input-grp {
     width: 151px;
     display: inline-block;
+    
+
 }
 
 .from-control {
@@ -180,6 +184,7 @@
     border-radius: 0;
     background: transparent;
     box-shadow: non;
+    padding-left: 5px;
 
 }
 
