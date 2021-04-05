@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="cont-principal">
+        <div class="header">
+            <div id="icon">
+                <img src="Assets /Image/image/WhatsApp Image 2021-03-21 at 19.21.13.jpeg" alt="logo">
+                <h1 id="title-icon">Easy Travel</h1>
+            </div>
+        </div>
+        <div id="container" class="container">
+            <div id="pay-form">
+                <!--Personal Info-->
+                <div id="p-info">
+                    <input id="fname" type="text" placeholder="First Name" required>
+                    <input id="lname" type="text" placeholder="First Last-name" required>
+                    <input id="date" type="date" placeholder="Date of Birth" required>
+                    <input id="Numero" type="number" placeholder="Phone number" required>
+                </div>
+                <div id="male-or-female">
+                    <label id="male" for="male">Male</label>
+                    <input id="checkbox1" type="radio" name="checkbox" value="Man" required>
+                    <label id="female" for="female">Female</label>
+                    <input id="checkbox2" type="radio" name="checkbox" value="woman" required>
+                </div>
+                <!--General Info-->
+                <div id="select1">
+                    <select name="Country" id="Country" value="Your Country...">
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                    </select>
+                </div>
+                <!--Payment Info-->
+                <div id="pay">
+                    <label class="mastercard" for="masterCard">
+                        MasterCard
+                        <!-- <i class="fab fa-cc-mastercard fa-5x" style="color: white;"></i>-->
+                    </label>
+                    <input name="checkbox1" id="check1" type="radio" value="MasterCart" required>
+                    <label class="paypal" for="payPal">
+                        Paypal
+                        <!-- <i class="fab fa-cc-paypal fa-5x" style="color: white;"></i> -->
+                    </label>
+                    <input name="checkbox1" id="check2" type="radio" value="Paypal" required>
+                </div>
+                <div id="card-info">
+                    <input type="tel" placeholder="Numero de carte de credit" id="card-number" required>
+                    <input type="tel" placeholder="CVC" id="cardCVC" required>
+                </div>
+                <div id="select-date">
+                    <select name="date" id="cart-date">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                    </select>
+                    <select name="year" id="cart-year">
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+                <div id="payment-button">
+                    <input id="button" type="submit" formtarget="_blank" value="Validate">
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="pay.js"></script>
+</body>
+
+</html>

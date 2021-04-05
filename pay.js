@@ -1,53 +1,71 @@
-var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
-var client_secret = 'Ef1CzL2vsiygVqBb';
-
-var urlencoded = new URLSearchParams();
-urlencoded.append("client_id", client_id);
-urlencoded.append("client_secret", client_secret);
-urlencoded.append("grant_type", "client_credentials");
-
 const urlParams = new URLSearchParams(window.location.search);
 
 var idRooms = '';
 
-if(urlParams.has('id')){
-    idRooms = urlParams.get('id');
+if(urlParams.has('idRoom')){
+    idRooms = urlParams.get('idRoom');
 }
 
 if(idRooms === ''){
     console.log('null');
 }else{
-    var accesToken = '';
+    function pay(){
+        var firstName = document.getElementById('fname').value;
+        var lastName = document.getElementById('lname').value;
+        var dateBrithday = document.getElementById('date').value;
+        var numTelefone = document.getElementById('Numero').value;
+        var select = document.getElementById('Country');
+        var countryName = select.options[select.selectedIndex].text;
+
+        var genre ='';
+
+        if(document.getElementById('checkbox1').checked){
+            genre = document.getElementById('checkbox1').value;
+        }else if(document.getElementById('checkbox2').checked){
+            genre = document.getElementById('checkbox2').value;
+        }
+
+        var typePay = '';
+
+        if(document.getElementById('check1').checked){
+            typePay = document.getElementById('check1').value;
+        }else if(document.getElementById('check2').checked){
+            typePay = document.getElementById('check1').value;
+        }
+
+        var cardNumber = document.getElementById('card-number').value;
+        var cardCVC = document.getElementById('cardCVC').value;
+
+        var selectMonth = document.getElementById('cart-date');
+
+        var monthExpireCard = selectMonth.options[selectMonth.selectedIndex].value;
+
+        var selectYear = document.getElementById('cart-year');
+
+        var yearExpireCard = selectYear.options[selectYear.selectedIndex].value;
+
+        var dateExpireCard = monthExpireCard + '/' + yearExpireCard; 
+
+        if(firstName ==='' || lastName==='' || dateBrithday==='' || numTelefone==='' 
+        || genre==='' || typePay==='' || cardNumber==='' || cardCVC===''){
+            location.replace(urlParams);
+        }else{
+            var url = new URL("http://localhost:8000/resultPrenota.html");
     
-    var requestOptions = {
-		method: 'POST',
-		body: urlencoded,
-		redirect: 'follow'
-	  };
-
-	  fetch("https://test.api.amadeus.com/v1/security/oauth2/token", requestOptions)
-        .then(result => result.json())
-        .then(result => {
-            accesToken =result['access_token'];
-            console.log(result);
-            postPays();
-        })
-        .catch(error => console.log('Error: ' + error));
-
-        function postPays(){
-            
-            var requestOptions = {
-                headers: {
-                    'Authorization':'Bearer ' + accesToken
-                },
-              };
-
-              fetch("https://test.api.amadeus.com/v2/shopping/hotel-offers/" + idRooms, requestOptions)
-                .then(response => response.json())
-                .then(result => {
-                    console.log(result);
-                    
-                })
-                .catch(error => console.log('error', error));
+            url.searchParams.append('firstName', firstName);
+            url.searchParams.append('lastName', lastName);
+            url.searchParams.append('dateBrithday', dateBrithday);
+            url.searchParams.append('numTelefone', numTelefone);
+            url.searchParams.append('genre', genre);
+            url.searchParams.append('typePay', typePay);
+            url.searchParams.append('cardNumber', cardNumber);
+            url.searchParams.append('cardCVC', cardCVC);
+            url.searchParams.append('countryName', countryName);
+            url.searchParams.append('dateExpireCard', dateExpireCard);
+            location.replace(url);
+            console.log(dateExpireCard);
+        }
     }
+
+    document.getElementById('button').addEventListener('click', pay);
 }

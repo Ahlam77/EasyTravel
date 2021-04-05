@@ -1,3 +1,114 @@
 {
-  "users": []
+  "users": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNumber": "",
+      "countryName": "",
+      "cityName": "",
+      "emailAddress": "",
+      "logitude": "",
+      "latitude": ""
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNumber": "",
+      "countryName": "",
+      "cityName": "",
+      "emailAddress": "",
+      "logitude": "",
+      "latitude": ""
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNumber": "",
+      "countryName": "",
+      "cityName": "",
+      "emailAddress": "",
+      "logitude": "",
+      "latitude": ""
+    },
+    {
+      "firstName": "Gando",
+      "lastName": "Diallo",
+      "phoneNumber": "3510321864",
+      "countryName": "Guinea",
+      "cityName": "Labé",
+      "emailAddress": "gandoesprit@gmail.com",
+      "logitude": "087654",
+      "latitude": "897654"
+    },
+    {
+      "firstName": "Gando",
+      "lastName": "Diallo",
+      "phoneNumber": "3510321864",
+      "countryName": "Guinea",
+      "cityName": "Labé",
+      "emailAddress": "gandoesprit@gmail.com",
+      "logitude": "087654",
+      "latitude": "897654"
+    },
+    {
+      "firstName": "Gando",
+      "lastName": "Diallo",
+      "phoneNumber": "3510321864",
+      "countryName": "Guinea",
+      "cityName": "Labé",
+      "emailAddress": "gandoesprit@gmail.com",
+      "logitude": "087654",
+      "latitude": "897654"
+    },
+    {
+      "firstName": "Gando",
+      "lastName": "Diallo",
+      "phoneNumber": "3510321864",
+      "countryName": "Guinea",
+      "cityName": "Labé",
+      "emailAddress": "gandoesprit@gmail.com",
+      "logitude": "087654",
+      "latitude": "897654"
+    },
+    {
+      "firstName": "Gando",
+      "lastName": "Diallo",
+      "phoneNumber": "3510321864",
+      "countryName": "Guinea",
+      "cityName": "Labé",
+      "emailAddress": "gandoesprit@gmail.com",
+      "logitude": "087654",
+      "latitude": "897654"
+    },
+    {
+      "firstName": "Awali",
+      "lastName": "Moussa",
+      "phoneNumber": "31234567",
+      "countryName": "Benin",
+      "cityName": "Awada",
+      "emailAddress": "moussa@gmail.com",
+      "logitude": "12345",
+      "latitude": "23456"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Conde",
+      "phoneNumber": "765432",
+      "countryName": "iuytre",
+      "cityName": "iuytre",
+      "emailAddress": "m@gmail.com",
+      "logitude": "7654",
+      "latitude": "76543"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "phoneNumber": "",
+      "countryName": "",
+      "cityName": "",
+      "emailAddress": "",
+      "logitude": "",
+      "latitude": ""
+    }
+  ]
 }
