@@ -1,8 +1,3 @@
-var urlencoded = new URLSearchParams();
-urlencoded.append("client_id", client_id);
-urlencoded.append("client_secret", client_secret);
-urlencoded.append("grant_type", "client_credentials");
-
 const urlParams = new URLSearchParams(window.location.search);
 
 var idRooms = '';
@@ -14,55 +9,63 @@ if(urlParams.has('idRoom')){
 if(idRooms === ''){
     console.log('null');
 }else{
-    var fullName = document.getElementById('full-name').value;
-    var nickName = document.getElementById('nick-name').value;
-    var email = document.getElementById('email').value;
-    var day = document.getElementById('day').value;
-    var month = document.getElementById('month').value;
-    var year = document.getElementById('year').value;
+    function pay(){
+        var firstName = document.getElementById('fname').value;
+        var lastName = document.getElementById('lname').value;
+        var dateBrithday = document.getElementById('date').value;
+        var numTelefone = document.getElementById('Numero').value;
+        var select = document.getElementById('Country');
+        var countryName = select.options[select.selectedIndex].text;
 
-    var dateOfBrith = day + '-' + month + '-' + year;
+        var genre ='';
 
-    var genre ='';
-    if(document.getElementById('gendar-mal').checked){
-        genre = document.getElementById('gendar-mal').value
-    }else if(document.getElementById('gendar-femel').checked){
-        genre = document.getElementById('gendar-femel').value;
-    }
-
-    var paymentMethod= '';
-    if(document.getElementById('pay-cart').checked){
-        paymentMethod = document.getElementById('pay-cart').value;
-    }else if(document.getElementById('pay-pal').checked){
-        paymentMethod = document.getElementById('pay-pal').value;
-    }
-
-    var cartNumber = document.getElementById('cart-number').value;
-
-    var cardCVC = document.getElementById('card-CVC');
-
-    /*var monthEspire = document.getElementById('monthExpire').selected;
-    var yearExpire = document.getElementById('yearExpire').selected;
-    var dateExpire = monthEspire +'/' + yearExpire;*/
-
-    function getPay(){
-        if(fullName === ''){
-            console.log('null');
-        }else{
-            var url = new URL("http://localhost:8000/resultPrenota.html");
-            console.log(url);
-
-            url.searchParams.append('fullName', fullName);
-            /*url.searchParams.append('nickName', nickName);
-            url.searchParams.append('email', email);
-            url.searchParams.append('dateOfBrith', dateOfBrith);
-            url.searchParams.append('genre', genre);
-            url.searchParams.append('paymentMethod', paymentMethod);
-            url.searchParams.append('cardNumber', cartNumber);*/
-            location.replace(url);
+        if(document.getElementById('checkbox1').checked){
+            genre = document.getElementById('checkbox1').value;
+        }else if(document.getElementById('checkbox2').checked){
+            genre = document.getElementById('checkbox2').value;
         }
 
+        var typePay = '';
+
+        if(document.getElementById('check1').checked){
+            typePay = document.getElementById('check1').value;
+        }else if(document.getElementById('check2').checked){
+            typePay = document.getElementById('check1').value;
+        }
+
+        var cardNumber = document.getElementById('card-number').value;
+        var cardCVC = document.getElementById('cardCVC').value;
+
+        var selectMonth = document.getElementById('cart-date');
+
+        var monthExpireCard = selectMonth.options[selectMonth.selectedIndex].value;
+
+        var selectYear = document.getElementById('cart-year');
+
+        var yearExpireCard = selectYear.options[selectYear.selectedIndex].value;
+
+        var dateExpireCard = monthExpireCard + '/' + yearExpireCard; 
+
+        if(firstName ==='' || lastName==='' || dateBrithday==='' || numTelefone==='' 
+        || genre==='' || typePay==='' || cardNumber==='' || cardCVC===''){
+            location.replace(urlParams);
+        }else{
+            var url = new URL("http://localhost:8000/resultPrenota.html");
+    
+            url.searchParams.append('firstName', firstName);
+            url.searchParams.append('lastName', lastName);
+            url.searchParams.append('dateBrithday', dateBrithday);
+            url.searchParams.append('numTelefone', numTelefone);
+            url.searchParams.append('genre', genre);
+            url.searchParams.append('typePay', typePay);
+            url.searchParams.append('cardNumber', cardNumber);
+            url.searchParams.append('cardCVC', cardCVC);
+            url.searchParams.append('countryName', countryName);
+            url.searchParams.append('dateExpireCard', dateExpireCard);
+            location.replace(url);
+            console.log(dateExpireCard);
+        }
     }
 
-    document.getElementById('valid').addEventListener('click', getPay);
+    document.getElementById('button').addEventListener('click', pay);
 }

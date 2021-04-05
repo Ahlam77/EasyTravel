@@ -23,7 +23,7 @@
 }
 
 .body{
-    background-color: white;
+    background-image: url(Image/travel.jpg) center;
     border: 2px solid blue;
     border-radius: 5px;
     display: flex;
@@ -173,25 +173,25 @@ img{
 }
 
 .result{
-    height: 200px;
-    padding-top: 10px;
-    text-align: center;
+    background-color: rgba(52, 96, 214, 0.514);
+    color: white;
+    margin: auto;
 }
 
-#result-link{
+.result-link{
     background-color: blue;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     font-weight: normal;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: auto;
+    text-align: center;
 }
 
-#result-link a{
+.result-link a{
     text-decoration: none;
     color: white;
 }

@@ -161,7 +161,7 @@ if(hotelId === ''){
 					aDeals.style.textDecoration = 'none';
 					aDeals.style.borderRadius = '5px';
 					aDeals.style.fontWeight = 'bold';
-					aDeals.setAttribute('href', './pay.html?idRoom=' + element.id);
+					aDeals.setAttribute('href', './paymentpage.html?idRoom=' + element.id);
 					pTagDeals.style.marginLeft = '10px';
 					pTagDeals.appendChild(aDeals);
 					divPriceDeals.appendChild(pTagDeals);
