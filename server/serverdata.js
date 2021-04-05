@@ -1,7 +1,7 @@
 const express = require('express') // to create the express server
 const app = express() //use express
 const port = 3000 // the port we are using
-
+app.use(express.json()); // to parse the body of the response
 
 // Set the application api to listen on this port so that it will respond
 app.listen(port, () => {
@@ -33,6 +33,6 @@ res.send('User created') //sending back a response
 // Remove a user
 app.delete('/users/1', (req, res) => {
     db.get('users')
-      .remove({ id: 1})
+      .remove({id: 1})
       .write()
     })
