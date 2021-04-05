@@ -1,6 +1,3 @@
-var client_id = 'mGGYQayW5TYAwlFfFLpRVvtpimIL94cY';
-var client_secret = 'Ef1CzL2vsiygVqBb';
-
 var urlencoded = new URLSearchParams();
 urlencoded.append("client_id", client_id);
 urlencoded.append("client_secret", client_secret);
