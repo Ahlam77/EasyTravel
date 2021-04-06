@@ -20,19 +20,28 @@
             </div>
             <button type="button" class="signup-btn">Sign Up</button>
         </div>
-        <!--NAV-->
-        <div class="nav">
-            <h3> Search Appartment </h3>
-            <input type="text" id="where" name="where" placeholder="where">
-            <input type="date" class="date-check" name="checkin">
-            <input type="date" class="date-check" name="checkout">
-            <input type="number" id="guess" name="guess" placeholder="guess">
-            <input type="submit" id="search" name="search" value="Search">
-        </div>
         <!--BODY-->
         <div class="body">
-            <div id="hotels-info"></div>
-            <div id='map'></div>
+            <div class="body-content">
+                <h1>Apartment information</h1>
+                <p><label for="first-name">First Name</label></p>
+                <p><input type="text" id="first-name"></p>
+                <p><label for="last-name">Last Name</label></p>
+                <p><input type="text" id="last-name"></p>
+                <p><label for="tel">Phone Number</label></p>
+                <p><input type="tel" id="tel"></p>
+                <p><label for="country">Country</label></p>
+                <p><input type="text" id="country"></p>
+                <p><label for="city">City</label></p>
+                <p><input type="text" id="city"></p>
+                <p><label for="email">E-Mail</label></p>
+                <p><input type="email" id="email"></p>
+                <p><label for="longitude">Longitude</label></p>
+                <p><input type="text" id="longitude"></p>
+                <p><label for="latitude">Latitude</label></p>
+                <p><input type="text" id="latitude"></p>
+                <p><button id="btn-save">Save</button></p>
+            </div>
         </div>
         <!--FOOTER-->
         <div class="footer">
@@ -67,6 +76,6 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="appartment.js"></script>
 </body>
 </html>

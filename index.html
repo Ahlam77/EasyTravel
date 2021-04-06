@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -21,10 +23,11 @@
         <img src="Image/Easy_Travel2.png" alt="logo">
         <h1>Easy Travel</h1>
         <button type="button" class="signup-btn">Sign In</button>
+        <button type="button" class="signup-btn">Sign In</button>
         <section>
           <div class="button-continar">
             <a href="appartment.html" target="blank"><button type="button" class="Apa-btn"> Apartment</button></a>
-            <a href="hotels1.html" target="blank"><button type="button" class="hot-btn"> Hotels</button></a>
+            <a href="hotels.html" target="blank"><button type="button" class="hot-btn"> Hotels</button></a>
           </div>
         </section>
       </div>
@@ -35,17 +38,19 @@
 
   <section>
     <div class="bg-image" style="background-image: url('Image/travel.jpg')">
-      <h2 style="position: absolute; top: 57%; left: 30%; transform: translate(-50% ,-50%) ; color:blue ; font-family: Roboto; font-weight: bold;" >Discover
+      <h2
+        style="position: absolute; top: 57%; left: 30%; transform: translate(-50% ,-50%) ; color:blue ; font-family: Roboto; font-weight: bold;">
+        Discover
         what's out there. <br> <br> Not sure where to start your getaway? <br> <br>
         Check out our top destinations</h2>
-        
+
       <div class="booking-form-box">
         <div class="radio-btn">
           <input type="radio" class="btn" name="check" checked="checked"><span>Travel with my family</span>
           <input type="radio" class="btn" name="check"><span>Free Cancelletion</span>
         </div>
         <div class="booking-form">
-          <label>where</label>
+          <label>Where</label>
           <input type="text" class="from-control" style="width: 95%; " id="where">
 
           <div class="input-grp">
@@ -53,7 +58,7 @@
             <input type="date" class="from-control select-date" id="checkIn">
           </div>
           <div class="input-grp">
-            <label>Returing</label>
+            <label>Return</label>
             <input type="date" class="from-control select-date" id="checkOut">
           </div>
           <div class="input-grp">
@@ -62,7 +67,7 @@
           </div>
           <div class="input-grp">
             <label>Children</label>
-            <input type="number" class="from-control " value="0" >
+            <input type="number" class="from-control " value="0">
           </div>
           <div class="input-grp">
             <label>Rooms</label>
@@ -71,9 +76,9 @@
               <option>Double</option>
               <option>Triple</option>
 
-          </select>
-        </div>
-          <button type="submit" class="search">search</button>
+            </select>
+          </div>
+          <button type="submit" class="search">Search</button>
         </div>
       </div>
     </div>
@@ -88,7 +93,7 @@
             <div class="feature-img">
               <img src="Image/place-2.jpg" alt="">
               <div class="praice">
-                <p>75£</p>
+                <p>75€</p>
               </div>
               <div class="rating">
                 <i class="fa fa-star"></i>
@@ -99,11 +104,11 @@
               </div>
             </div>
             <div class="feature-detalis">
-              <h4>Rome, Italy</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
-                </p>
+              <h4>Sydney, Australia </h4>
+              <p>Crowne Plaza Coogee Beach Charming visitors with its pristine coastline and unspoilt beauty, Crowne Plaza Sydney Coogee Beach has long been known as one of Sydney’s most iconic beachside retreats.
+              </p>
               <div>
-                <span><i class="fa fa-map-marker"></i> Rome</span>
+                <span><i class="fa fa-map-marker"></i> Sydney</span>
                 <span><i class="fa fa-sun-o"></i> 4 days </span>
                 <span><i class="fa fa-moon-o"></i> 3 nights</span>
               </div>
@@ -115,7 +120,7 @@
             <div class="feature-img">
               <img src="Image/place-6.jpg" alt="">
               <div class="praice">
-                <p>150£</p>
+                <p>150€</p>
               </div>
               <div class="rating">
                 <i class="fa fa-star"></i>
@@ -126,11 +131,11 @@
               </div>
             </div>
             <div class="feature-detalis">
-              <h4>Australia</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
-                </p>
+              <h4>Rome, Italy</h4>
+              <p>Hotel Giolli Nazionale specialises in cosy, quiet accommodation in the heart of Rome. Situated on the Via Nazionale, this hotel is located under 200 metres from the Palazzo delle Espozioni
+              .</p>
               <div>
-                <span><i class="fa fa-map-marker"></i> Australia</span>
+               <a href="https://www.windy.com/-Webcams/Italy/Lazio/Rome/Vatican-City-State-Saint-Peter's-Square/webcams/1230041254?41.919,5.867,6"> <span><i class="fa fa-map-marker"></i> Rome</span></a>
                 <span><i class="fa fa-sun-o"></i> 4 days </span>
                 <span><i class="fa fa-moon-o"></i> 3 nights</span>
               </div>
@@ -142,7 +147,7 @@
             <div class="feature-img">
               <img src="Image/place-4.jpg" alt="">
               <div class="praice">
-                <p>100£</p>
+                <p>100€</p>
               </div>
               <div class="rating">
                 <i class="fa fa-star"></i>
@@ -154,8 +159,8 @@
             </div>
             <div class="feature-detalis">
               <h4>London, UK</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestias distinctio ullam
-                </p>
+              <p>Hilton Hotel Feel at home in the vibrant hotel lobby in central London. Expect a knowledgeable Concierge service and high speed wireless Internet access throughout the hotel.
+              </p>
               <div>
                 <span><i class="fa fa-map-marker"></i> London</span>
                 <span><i class="fa fa-sun-o"></i> 4 days </span>
@@ -175,19 +180,19 @@
         <div class="col-md-3">
           <div class="gallery-box">
             <img src="Image/place-2.jpg" alt="">
-            <h4>USA</h4>
+            <h4>Australia </h4>
           </div>
         </div>
         <div class="col-md-3">
           <div class="gallery-box">
-            <img src="Image/place-3.jpg" alt="">
-            <h4>Australia</h4>
+            <img src="Image/place-1.jpg" alt="">
+            <h4>France</h4>
           </div>
         </div>
         <div class="col-md-3">
           <div class="gallery-box">
             <img src="Image/place-5.jpg" alt="">
-            <h4>USA</h4>
+            <h4> Thailand</h4>
           </div>
         </div>
         <div class="col-md-3">
@@ -199,34 +204,29 @@
 
   </section>
   <section class="users-feedback">
-    <h1>Trip Advaiser</h1>
+    <h1>Trip Adviser</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <div class="user-review">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
-              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
-              recusandae. Consectetur at ea amet doloremque aliquid.</p>
-            <h5>Marco </h5>
-            <small>Australia</small>
+            <p>The Opera House will always be associated with Sydney, but this architectural masterpiece is an icon of which all Australians can be proud. little could I guess just how stunning the end product would be. I have visited the Opera House several times. All I can say is don't visit Sydney without visiting this emblem of Australia.</p>
+            <h5>Jeffry b </h5>
+            <small>Sydney</small>
           </div>
           <img src="Image/person-1.jpg" alt="Marco">
         </div>
         <div class="col-md-4">
           <div class="user-review">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
-              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
-              recusandae. Consectetur at ea amet doloremque aliquid.</p>
-            <h5>Marco </h5>
-            <small>USA</small>
+            <p>Although the city is relatively small geographically, because of the hills, you need to buy a one, three, or seven-day visitor pass at either the airport or any Walgreens. This allows you access to the buses, trams, streetcars, and — most importantly — the cable cars. Without the pass, each trip on a cable car will cost you $6!.</p>
+            <h5>Bsimosd </h5>
+            <small>San Francisco</small>
           </div>
           <img src="Image/person-2.jpg" alt="Marco">
         </div>
         <div class="col-md-4">
           <div class="user-review">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum voluptate labore, exercitationem
-              dolorum reprehenderit quae, voluptates iusto explicabo accusantium quas laboriosam pariatur quod
-              recusandae. Consectetur at ea amet doloremque aliquid.</p>
+            <p>You won't need to know a word of Italian to enjoy your trip. However, learning a few key words and phrases will be fun, helpful, and sometimes make you a little more appreciated.
+           <br> <br> It breathes history and art at every step you take and behind every corner, there's a surprise.</p>
             <h5>Marco </h5>
             <small>Italy</small>
           </div>
@@ -241,12 +241,13 @@
         <div class="row">
           <div class="col-md-3">
             <img src="Image/Easy_Travel2.png" alt="" class="footer-logo">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat hic esse excepturi obcaecati in animi
-              at facilis consectetur aperiam itaque nihil velit alias quisquam dignissimos maxime nesciunt vero,
-              mollitia ipsum.</p>
+ 
+
+            <p>Easy travel.</p>
+
           </div>
           <div class="col-md-3">
-            <h4>features</h4>
+            <h4>Features</h4>
             <p>Deals & Offers</p>
             <p>Customer Reviews</p>
             <p>Cancelation Policy</p>
@@ -256,18 +257,19 @@
             <p><i class="fa fa-phone-square"></i> +0 00000000</p>
             <p><i class="fa fa-envelope-square"></i> Easytravel@axample.com</p>
             <p><i class="fa fa-home"></i> xyz Rode, ABC City</p>
-            
+
           </div>
           <div class="col-md-3">
-          <h4>Follow Us</h4>
+            <h4>Follow Us</h4>
             <p><i class="fa fa-facebook-official"></i> Facebook</p>
             <p><i class="fa fa-youtube-play"></i> Youtube</p>
             <p><i class="fa fa-twitter"></i> Twitter</p>
-        </div>
+          </div>
         </div>
       </div>
     </footer>
   </section>
   <script src="urlIndex.js"></script>
 </body>
+
 </html>

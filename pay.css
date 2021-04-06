@@ -16,6 +16,10 @@ body {
 
 }
 
+.header {
+    background-color: white;
+}
+
 .header h1 {
     font-family: Roboto;
     font-size: 36px;
@@ -26,13 +30,13 @@ body {
     text-align: left;
     color: blue;
     position: absolute;
-    top: 50%;
+    top: 36%;
     left: 12%;
 
 
 }
 
-.wapper {
+.wrapper {
     background-color: white;
     width: 500px;
     padding: 25px;
@@ -40,7 +44,7 @@ body {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.wapper h2 {
+.wrapper h2 {
     background-color: white;
     color: blue;
     font-size: 24px;
@@ -48,12 +52,15 @@ body {
     text-align: center;
     margin-bottom: 20px;
     border: 1px dotted #333;
+    font-family: Roboto;
+    font-weight: bold;
 
 }
 
 h4 {
     padding-bottom: 5px;
     color: blue;
+    font-family: Roboto;
 }
 
 .input-group {
@@ -115,6 +122,7 @@ h4 {
     pointer-events: none;
     border: 1px solid black;
     border-right: none;
+
 }
 
 .name:focus+.icon {
@@ -181,6 +189,7 @@ h4 {
     border: 1px solid black;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-family: Roboto;
 
 }
 
@@ -200,10 +209,10 @@ button {
     border-radius: 4px;
     font-size: 16px;
     transition: all 0.3s ease;
+
 }
 
 button:hover {
     cursor: pointer;
     background: white;
-
 }

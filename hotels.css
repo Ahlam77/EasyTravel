@@ -1,4 +1,4 @@
-.container{
+.container {
     font-family: Roboto;
     background-color: rgb(245, 245, 245);
     display: grid;
@@ -6,14 +6,14 @@
     grid-gap: 5px;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     grid-column: 1;
     grid-row: 1;
 }
 
-.nav{
+.nav {
     border-radius: 8px;
     grid-column: 1;
     grid-row: 2;
@@ -22,33 +22,35 @@
     text-align: center;
 }
 
-.body{
-    background-color: white;
+.body {
+    background-image: url(Image/travel.jpg) center;
     border: 2px solid blue;
     border-radius: 5px;
     display: flex;
     grid-column: 1;
     grid-row: 3;
     padding: 10px;
-   /* margin: auto;*/
-    
+    /* margin: auto;*/
+
 }
 
-.footer{
+.footer {
     display: grid;
     grid-column: 1;
     grid-row: 4;
     grid-template-areas: "col-md-1 .col-md-2 .col-md-3";
-    background-color:  rgb(90, 90, 247);
-       
+    background-color: rgb(90, 90, 247);
+
 }
 
-.nav h3{
+.nav h3 {
     font-size: 1.7em;
     margin-bottom: 3px;
+    font-family: Roboto;
+
 }
 
-#title-icon{
+#title-icon {
     color: blue;
     font-size: 36px;
     font-style: italic;
@@ -58,18 +60,18 @@
     text-align: left;
 }
 
-#icon{
+#icon {
     display: flex;
     margin-bottom: 10px;
     position: relative;
 }
 
-#icon img{
+#icon img {
     height: 108px;
     width: 118px;
 }
 
-.signup-btn{
+.signup-btn {
     background-color: blue;
     border-radius: 6px;
     color: white;
@@ -89,14 +91,14 @@
     width: 115px;
 }
 
-.nav input{
+.nav input {
     border-color: rgb(245, 245, 245);
     border-radius: 3px;
     height: 36px;
     width: 200px;
 }
 
-#search{
+#search {
     background-color: blue;
     border-color: black;
     border-radius: 6px;
@@ -109,16 +111,16 @@
     width: 150px;
 }
 
-#map{
+#map {
     height: 90vh;
     width: 770px;
     margin-right: 10px;
     position: sticky;
     top: 10px;
-    
+
 }
 
-#hotels-info{
+#hotels-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -126,11 +128,11 @@
     width: 100vh;
 }
 
-.area{
+.area {
     display: grid;
     grid-template-areas:
-    "area1 area2"
-    "area1 area3";
+        "area1 area2"
+        "area1 area3";
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -138,83 +140,92 @@
     margin: 0px;
 
 }
+
 /*.area > div{
     padding: 0em;
     background-color: rgba(0, 0, 0, 0.274);
     border-radius: 12px;
     height: 500px;
 }*/
-#area1{
+#area1 {
     grid-area: area1;
     height: 500px;
 }
-#area2{
+
+#area2 {
     grid-area: area2;
     height: 245px;
     padding: 0px;
     margin-bottom: 5px;
 }
-#area3{
+
+#area3 {
     grid-area: area3;
     height: 245px;
     margin-top: 0px;
     padding: 0px;
 }
-img{
+
+img {
     background-size: contain;
     max-width: auto;
     width: 100%;
     height: 100%;
     border-radius: 12px;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: row;
 }
 
-.result{
-    height: 200px;
-    padding-top: 10px;
-    text-align: center;
+.result {
+    background-color: rgba(52, 96, 214, 0.514);
+    color: white;
+    margin: auto;
 }
 
-#result-link{
+.result-link {
     background-color: blue;
     border: 1px solid black;
     border-radius: 5px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: bold;
     font-style: italic;
     font-weight: normal;
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: auto;
+    text-align: center;
 }
 
-#result-link a{
+.result-link a {
     text-decoration: none;
     color: white;
 }
 
 
-#Iflex{
+#Iflex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#child1{
-  display: grid;
- grid-template-columns: 15% 1fr ;
-}
-#child2{
+
+#child1 {
     display: grid;
- grid-template-columns: 15% 1fr ;
+    grid-template-columns: 15% 1fr;
 }
-#child3{
+
+#child2 {
     display: grid;
- grid-template-columns: 15% 1fr  ;
+    grid-template-columns: 15% 1fr;
 }
-#container-body{
+
+#child3 {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+}
+
+#container-body {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -222,28 +233,26 @@ img{
     margin: 10px auto;
     width: 95%;
 }
-.div{
+
+.div {
     background-color: teal;
     width: 500px;
     height: 400px;
     padding: 50px;
 }
-#hotel-name{
+
+#hotel-name {
     margin: 55px 0 10px;
 }
 
-#map-result{
+#map-result {
     height: 300px;
     position: sticky;
     top: 10px;
 }
 
 
-/*body{
-    width: 100%;
-    height: 150vh;
 
-}
 .container img {
     width: 100px;
     height: 100px;
@@ -260,30 +269,28 @@ img{
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
-    color: blue;
-=======
-.footer-logo {
-    width: 70px;
-    height: 70px;
-    margin-top: -10px;
-    margin-bottom: 15px;
->>>>>>> 0443a00f12240968eac6526ff272ef08bcdf0415
-    position: absolute;
-    left: 10px;
+    color: blue;}
 
-
-}
-.col-md-1{
-    text-align: center;
-
+    .footer-logo {
+        width: 80px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        position: absolute;
+        left: 10px;
+    
+    
     }
-.col-md-1 p{
-    float: left;
-    margin-left: 20px;
-    margin-top: 50px;
-    color: white;
-}
-.col-md-2,.col-md-3{
-    margin-top: 50px;
-    color: white;
-}
+    .col-md-1{
+        text-align: center;
+    
+        }
+    .col-md-1 p{
+        float: left;
+        margin-left: 80px;
+        margin-top: 25px;
+        color: white;
+    }
+    .col-md-2,.col-md-3{
+        margin-top: 50px;
+        color: white;
+    }
