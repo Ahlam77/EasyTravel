@@ -112,14 +112,15 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					div.style.border = '1px rgb(90, 90, 247) solid'
 					div.style.borderRadius = '5px';
 					div.style.width = '99%';
+					div.style.height = '200px';
 
 					var divComponent = document.createElement('div');
 					div.style.display = 'flex';
 
 					var img = document.createElement('img');
-					img.setAttribute('src', './Image/place-10.jpg');
+					img.setAttribute('src', './Image/hotel-name.jpg');
 					img.style.height = '200px';
-					img.style.width = '200px';
+					img.style.width = '250px';
 					img.style.borderRadius = '5px';
 					img.style.border = '1px black solid';
 					img.style.marginRight = '10px'
@@ -149,16 +150,31 @@ if(city === '' || checkinDate === ''  || checkoutDate === '' || numberOfPeople =
 					divComponent.appendChild(pAdress);
 
 					var pPrice = document.createElement('p');
-					pPrice.innerHTML = 'Price: ' + element.offers[0].price.total + '$'
+					pPrice.innerHTML = 'Distance from city center:  ' 
+					+ element.hotel.hotelDistance.distance + '' 
+					+ element.hotel.hotelDistance.distanceUnit;
 					divComponent.appendChild(pPrice);
+
+					var pType = document.createElement('p');
+					pType.innerHTML = 'Type:  ' + element.hotel.type;
+					pType.style.marginBottom = '2px';
+					divComponent.appendChild(pType);
+
+					var pButton = document.createElement('p');
+					pButton.style.border = '1px solid'
+					pButton.style.height = '40px';
+					pButton.style.width = '115px';
+					pButton.style.borderRadius = '5px'
+					pButton.style.padding = '0px'
+					pButton.style.marginLeft = '300px';
 
 					var button = document.createElement('button');
 					button.setAttribute('class', 'signup-btn');
 					button.innerHTML = 'Deals';
-					button.style.display = 'block';
-					button.style.right = '10px';
+					button.style.margin = '0px';
 					button.addEventListener('click', addUrlHotel);
-					divComponent.appendChild(button);
+					pButton.appendChild(button)
+					divComponent.appendChild(pButton);
 
 					div.appendChild(divComponent);
 					document.getElementById('hotels-info').appendChild(div);
