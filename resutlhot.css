@@ -149,6 +149,30 @@
   margin-top: 0px;
   padding: 0px;
 }
+
+.footer-logo {
+  width: 80px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 10px;
+
+
+}
+.col-md-1{
+  text-align: center;
+
+  }
+.col-md-1 p{
+  float: left;
+  margin-left: 80px;
+  margin-top: 25px;
+  color: white;
+}
+.col-md-2,.col-md-3{
+  margin-top: 50px;
+  color: white;
+}
 /*.contener{
   display: grid;
   grid-template-columns: 40vh 1fr;
