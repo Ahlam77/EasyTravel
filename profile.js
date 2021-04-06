@@ -6,6 +6,9 @@
         function te1() {
             var p1 =document.getElementById('p1');
              p1.innerHTML = `
+             <a href="https://github.com/khaled-1994"; style="text-decoration: none; target:_blank">GITHUB</a>
+             <br>
+             <br>
              I am a person who loves success, loves challenges, and I have a love <br>
              for programming,and that is what  pushed me to take on the PowerCoders<br>
              challengeI am  a person who loves success, loves challenges,and I have<br>
@@ -34,7 +37,11 @@
        
         function te2() {
             var p2 =document.getElementById('p2');
-             p2.innerHTML = `I am a person who loves success, loves challenges, and I have a love <br>
+             p2.innerHTML = `
+             <a href="https://github.com/cryoAngel"; style="text-decoration: none;">GITHUB</a>
+             <br>
+             <br>
+             I am a person who loves success, loves challenges, and I have a love <br>
              for programming,and that is what  pushed me to take on the PowerCoders<br>
              challengeI am  a person who loves success, loves challenges,and I have<br>
              a love for programming,and that is what pushed me to take on the PowerCoders<br>
@@ -51,7 +58,11 @@
 
          function te3() {
             var p3 =document.getElementById('p3');
-             p3.innerHTML = `I am a person who loves success, loves challenges, and I have a love <br>
+             p3.innerHTML = `
+             <a href="https://github.com/GandoEsprit"; style="text-decoration: none;">GITHUB</a>
+             <br>
+             <br>
+             I am a person who loves success, loves challenges, and I have a love <br>
              for programming,and that is what  pushed me to take on the PowerCoders<br>
              challengeI am  a person who loves success, loves challenges,and I have<br>
              a love for programming,and that is what pushed me to take on the PowerCoders<br>
@@ -67,7 +78,11 @@
 
          function te4() {
             var p4 =document.getElementById('p4');
-             p4.innerHTML = `I am a person who loves success, loves challenges, and I have a love <br>
+             p4.innerHTML = `
+             <a href="https://github.com/Ahlam77"; style="text-decoration: none;">GITHUB</a>
+             <br>
+             <br>
+             I am a person who loves success, loves challenges, and I have a love <br>
              for programming,and that is what  pushed me to take on the PowerCoders<br>
              challengeI am  a person who loves success, loves challenges,and I have<br>
              a love for programming,and that is what pushed me to take on the PowerCoders<br>
@@ -83,7 +98,11 @@
 
          function te5() {
             var p5 =document.getElementById('p5');
-             p5.innerHTML = `I am a person who loves success, loves challenges, and I have a love <br>
+             p5.innerHTML = `
+             <a href="https://github.com/khaled-1994"; style="text-decoration: none;">GITHUB</a>
+             <br>
+             <br>
+             I am a person who loves success, loves challenges, and I have a love <br>
              for programming,and that is what  pushed me to take on the PowerCoders<br>
              challengeI am  a person who loves success, loves challenges,and I have<br>
              a love for programming,and that is what pushed me to take on the PowerCoders<br>
