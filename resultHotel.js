@@ -68,10 +68,9 @@ if(hotelId === ''){
 
 				title.innerHTML =`${result.data.hotel.type.toUpperCase()} ${result.data.hotel.name.toUpperCase()}`;
 				title.style.color = 'rgb(111, 111, 255)';
-				title.style.textShadow = '5px 5px 8px rgb(11, 11, 255)';
 				var divResult = document.getElementById('content-result');
 				divResult.style.display = 'flex';
-				divResult.style.justifyContent = 'space-between';
+				//divResult.style.justifyContent = 'space-between';
 
 				var divResultRoom = document.getElementById('result-rooms');
 				divResultRoom.style.height = '400px';
@@ -92,27 +91,35 @@ if(hotelId === ''){
 
 					var divPElement = document.createElement('div');
 
-					/*var divImagePTag = document.createElement('div');
+					var divImagePTag = document.createElement('div');
+					divImagePTag.style.height = '150px';
 
 					var pTagImage1 = document.createElement('p');
 
 					var image1 = document.createElement('img');
 					image1.setAttribute('src', 'Image/terrasse.jpg');
-					image1.style.height = '77px';
+					image1.style.height = '70px';
 					image1.style.width = '150px';
-					divImagePTag.appendChild(image1);
+					pTagImage1.appendChild(image1)
+					pTagImage1.style.height = '70px';
+					pTagImage1.style.marginTop = '2px';
+					pTagImage1.style.marginBottom = '4px';
+					divImagePTag.appendChild(pTagImage1);
 
 					var pTagImage2 = document.createElement('p');
 
 					var image2 = document.createElement('img');
 					image2.setAttribute('src', 'Image/piscine.jpg');
-					image2.style.height = '77px';
+					image2.style.height = '70px';
 					image2.style.width = '150px';
-					divImagePTag.appendChild(image2);
+					pTagImage2.appendChild(image2)
+					pTagImage2.style.height = '70px';
+					pTagImage2.style.marginTop = '1px';
+					divImagePTag.appendChild(pTagImage2);
 					divImagePTag.style.marginLeft = '10px';
 
 					divGlobelElement.style.height = '150px';
-					divGlobelElement.appendChild(divImagePTag);*/
+					divGlobelElement.appendChild(divImagePTag);
 
 					var pTagTypeRoom = document.createElement('p');
 					pTagTypeRoom.innerHTML = element.room.typeEstimated.category;
